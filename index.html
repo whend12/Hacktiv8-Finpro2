@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pet Care</title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/35dd348907.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- icons website -->
+    <link rel="shortcut icon" href="assets/img/trace.png" type="image/x-icon" />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- Template Stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Bootstrap Stylesheet -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg home fw-bold bg-white">
+      <div class="container position-relative">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse mt-2 pos d-flex justify-content-around align-items-center"
+          >
+            <div class="d-flex justify-content-around align-items-center">
+              <img
+                src="assets/img/trace.png"
+                alt="Logo"
+                width="20"
+                height="20"
+                class="d-inline-block align-text-top"
+                style="object-fit: cover"
+              />
+              <a class="navbar-brand"><span class="pup">pup</span>hub</a>
+            </div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button class="btn login me-md-3" type="button">Login</button>
+              <button class="btn sign" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- akhir navbar -->
+
+    <!-- section jumbotron -->
+    <section class="jumbotron" id="home">
+      <div class="container p-5">
+        <div class="row justify-content-evenly lh-lg">
+          <div class="col-md-4 mt-lg-5 teks" data-aos="zoom-in">
+            <h1 class="text-start">Taking care for your Smart Dog !</h1>
+            <p>
+              Human-canine bonding is the relationship between dogs and humans.
+            </p>
+            <button
+              type="button"
+              onclick="window.location.href='https://www.thesprucepets.com/cute-dog-breeds-we-can-t-get-enough-of-4589340'"
+              class="btn more"
+            >
+              Explore More
+              <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
+            </button>
+          </div>
+          <div class="col-md-4 p-0">
+            <img
+              src="assets/img/dog.png"
+              class="img-fluid"
+              data-aos="flip-up"
+              alt="dog"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- get waves -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#fff2b3"
+        fill-opacity="0.34"
+        d="M0,192L80,165.3C160,139,320,85,480,101.3C640,117,800,203,960,202.7C1120,203,1280,117,1360,74.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- akhir jumbotron -->
+
+    <!-- js getwaves -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1500,
+      });
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Template JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
