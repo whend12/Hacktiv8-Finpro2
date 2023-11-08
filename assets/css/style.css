@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+a.navbar-brand {
+  color: #ffe55e;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+a.navbar-brand:hover {
+  color: #fa0;
+}
+
+span.pup {
+  color: #fa0;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+a.nav-link {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  opacity: 80%;
+}
+
+.container > h2,
+.text {
+  color: #124c5f;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+nav.navbar {
+  opacity: 80%;
+}
+
+.jumbotron {
+  background-image: url("../img/jumbotron.png");
+  background-size: cover;
+}
+
+button.login {
+  background-color: #c7e7e1;
+  color: #124c5f;
+  border: 1px solid #124c5f;
+}
+
+button.login:hover {
+  background-color: #124c5f;
+  color: #fff;
+  border: 1px solid #c7e7e1;
+}
+
+button.sign {
+  background-color: #124c5f;
+  color: #fff;
+}
+
+button.sign:hover {
+  background-color: #c7e7e1;
+  color: #124c5f;
+}
+
+button.more {
+  background-color: #124c5f;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.more:hover {
+  background-color: #c7e7e1;
+  color: #124c5f;
+  border: 1px solid #124c5f;
+}
+
+button.buy {
+  color: #124c5f;
+  border: 1px solid #124c5f;
+}
+
+button.buy:hover {
+  color: #fff;
+  background-color: #124c5f;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
