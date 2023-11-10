@@ -1,6 +1,6 @@
  <div align="center">
   <a href="https://www.figma.com/file/wgyHSayOr5cXYlcPI8dQri/Pet-Care---Landing-page-(Community)?type=design&node-id=27%3A1&mode=design&t=mZ0Q5lQH5Bh2fTym-1">
-    <img src="https://github.com/whend12/Hacktiv-Finpro/assets/119909214/6b691c88-4fb2-45d3-95ef-722b39d60935" alt="Profile" width="200">
+    <img src="https://github.com/whend12/Hacktiv8-Finpro2/assets/119909214/1e9ba0d8-5fc9-4c52-8ca8-339534dfdad6" alt="Profile" width="auto" object-fit="cover">
   </a>
   <h2 style="font-size:30px;" align="center">
     <strong>
