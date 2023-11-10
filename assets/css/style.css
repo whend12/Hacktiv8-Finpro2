@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
 a.navbar-brand {
   color: #ffe55e;
   font-family: "Poppins", sans-serif;
@@ -32,12 +33,12 @@ a.nav-link {
 }
 
 nav.navbar {
+  background: #fff2b3;
   opacity: 80%;
 }
 
 .jumbotron {
-  background-image: url("../img/jumbotron.png");
-  background-size: cover;
+  background-color: rgba(255, 242, 179, 0.34);
 }
 
 button.login {
@@ -84,11 +85,11 @@ button.buy:hover {
   background-color: #124c5f;
 }
 
-@media screen and (max-width: 768px) {
-  .slide-content {
-    margin: 0 10px;
-  }
-  .swiper-navBtn {
-    display: none;
-  }
+/* Modal */
+#SignIn {
+  background-image: url(https://png.pngtree.com/png-vector/20230221/ourmid/pngtree-cute-dog-vector-png-image_6612077.png);
+  background-repeat: cover;
+  background-position: center;
 }
+
+/* End Modal */
