@@ -27,9 +27,9 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg home fw-bold bg-white">
-      <div class="container position-relative">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg home">
+      <div class="container">
+        <div class="container-fluid fw-bold">
           <button
             class="navbar-toggler"
             type="button"
@@ -42,20 +42,25 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse mt-2 pos d-flex justify-content-around align-items-center"
+            class="collapse navbar-collapse mt-2"
+            data-aos="fade-down"
+            id="navbarTogglerDemo01"
           >
-            <div class="d-flex justify-content-around align-items-center">
-              <img
-                src="assets/img/trace.png"
-                alt="Logo"
-                width="20"
-                height="20"
-                class="d-inline-block align-text-top"
-                style="object-fit: cover"
-              />
-              <a class="navbar-brand"><span class="pup">pup</span>hub</a>
-            </div>
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <img
+              src="assets/img/trace.png"
+              alt="Logo"
+              width="20"
+              height="20"
+              class="d-inline-block align-text-top"
+              style="object-fit: cover"
+            />
+
+            <a
+              class="navbar-brand"
+              href="https://www.figma.com/file/wgyHSayOr5cXYlcPI8dQri/Pet-Care---Landing-page-(Community)?type=design&node-id=27%3A1&mode=design&t=8SUmdpuvIgssFVe2-1"
+              ><span class="pup">pup</span>hub</a
+            >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto mt-2 mt-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
@@ -69,24 +74,186 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <div class="d-flex">
-              <button class="btn login me-md-3" type="button">Login</button>
-              <button class="btn sign" type="button">Sign Up</button>
-            </div>
+            <button
+              class="btn login me-md-3"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalForm"
+            >
+              Login
+            </button>
+
+            <button
+              class="btn sign"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalSignUp"
+            >
+              Sign Up
+            </button>
           </div>
         </div>
       </div>
     </nav>
-
     <!-- akhir navbar -->
+    <!-- Sign In Modal -->
+    <div
+      class="modal fade"
+      id="ModalForm"
+      tabindex="-1"
+      aria-labelledby="ModalFormLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="SignIn">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="myform">
+              <h1 class="text-center mb-4">Login Form</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark mt-3 w-100">
+                  LOGIN
+                </button>
+              </form>
+              <div class="text-center mt-3">
+                <p class="text-dark">
+                  Not a member?
+                  <a
+                    href="#"
+                    class="text-dark fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ModalSignUp"
+                    data-bs-dismiss="modal"
+                    >Signup now</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sign In Modal -->
+
+    <!-- Sign Up Modal -->
+    <div
+      class="modal fade"
+      id="ModalSignUp"
+      tabindex="-1"
+      aria-labelledby="ModalSignUpLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center">
+                <!-- Bagian Kiri (Gambar) -->
+                <img
+                  src="/assets/img/signup.png"
+                  alt="dog-image"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div class="col-md-6">
+                <!-- Bagian Kanan (Formulir) -->
+                <div class="myform">
+                  <h1 class="text-center mb-4">Sign Up Form</h1>
+                  <form>
+                    <div class="mb-3">
+                      <label for="fullname" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="fullname" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Email address</label
+                      >
+                      <input type="email" class="form-control" id="email" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="confirmPassword" class="form-label"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">
+                      Sign Up
+                    </button>
+                  </form>
+                  <div class="text-center mt-3">
+                    <p class="text-dark">
+                      Already a member?
+                      <a
+                        href="#"
+                        class="text-dark fw-bold"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ModalForm"
+                        data-bs-dismiss="modal"
+                        >Login now</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Sign Up Modal -->
 
     <!-- section jumbotron -->
     <section class="jumbotron" id="home">
       <div class="container p-5">
-        <div class="row justify-content-evenly lh-lg">
-          <div class="col-md-4 mt-lg-5 teks" data-aos="zoom-in">
-            <h1 class="text-start">Taking care for your Smart Dog !</h1>
-            <p>
+        <div class="row justify-content-evenly align-items-center lh-lg">
+          <div class="col-md-7 col-lg-6 mt-lg-5" data-aos="zoom-in">
+            <h1 class="">Taking care of your Smart Dog!</h1>
+            <p class="">
               Human-canine bonding is the relationship between dogs and humans.
             </p>
             <button
@@ -98,7 +265,7 @@
               <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
             </button>
           </div>
-          <div class="col-md-4 p-0">
+          <div class="col-md-5 col-lg-6 p-0">
             <img
               src="assets/img/dog.png"
               class="img-fluid"
@@ -119,6 +286,49 @@
     </svg>
     <!-- akhir jumbotron -->
 
+    <!-- tambahan service masuk ke home -->
+    <div class="container text-center">
+      <h2 data-aos="flip-up">Service Category</h2>
+      <div class="row row-cols-2 row-cols-lg-5" data-aos="zoom-out">
+        <div class="col">
+          <img
+            src="assets/img/service-one.png"
+            class="img-fluid-srv w-75"
+            alt="image-one"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/service-two.png"
+            class="img-fluid-srv w-75"
+            alt="image-two"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/service-three.png"
+            class="img-fluid-srv w-75"
+            alt="image-three"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/service-four.png"
+            class="img-fluid-srv w-75"
+            alt="image-four"
+          />
+        </div>
+        <div class="col offset-lg-0 offset-3">
+          <img
+            src="assets/img/service-five.png"
+            class="img-fluid-srv w-75"
+            alt="image-five"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- akhir home -->
+
     <!-- js getwaves -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -132,5 +342,6 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Template JS -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
   </body>
 </html>

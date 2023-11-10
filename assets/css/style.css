@@ -32,12 +32,12 @@ a.nav-link {
 }
 
 nav.navbar {
+  background: #fff2b3;
   opacity: 80%;
 }
 
 .jumbotron {
-  background-image: url("../img/jumbotron.png");
-  background-size: cover;
+  background-color: rgba(255, 242, 179, 0.34);
 }
 
 button.login {
@@ -83,12 +83,11 @@ button.buy:hover {
   color: #fff;
   background-color: #124c5f;
 }
-
-@media screen and (max-width: 768px) {
-  .slide-content {
-    margin: 0 10px;
-  }
-  .swiper-navBtn {
-    display: none;
-  }
+/* Modal */
+#SignIn {
+  background-image: url(https://png.pngtree.com/png-vector/20230221/ourmid/pngtree-cute-dog-vector-png-image_6612077.png);
+  background-repeat: cover;
+  background-position: center;
 }
+
+/* End Modal */
