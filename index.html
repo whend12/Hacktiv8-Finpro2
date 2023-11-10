@@ -27,9 +27,9 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg home fw-bold bg-white">
-      <div class="container position-relative">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg home">
+      <div class="container">
+        <div class="container-fluid fw-bold">
           <button
             class="navbar-toggler"
             type="button"
@@ -42,20 +42,25 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse mt-2 pos d-flex justify-content-around align-items-center"
+            class="collapse navbar-collapse mt-2"
+            data-aos="fade-down"
+            id="navbarTogglerDemo01"
           >
-            <div class="d-flex justify-content-around align-items-center">
-              <img
-                src="assets/img/trace.png"
-                alt="Logo"
-                width="20"
-                height="20"
-                class="d-inline-block align-text-top"
-                style="object-fit: cover"
-              />
-              <a class="navbar-brand"><span class="pup">pup</span>hub</a>
-            </div>
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <img
+              src="assets/img/trace.png"
+              alt="Logo"
+              width="20"
+              height="20"
+              class="d-inline-block align-text-top"
+              style="object-fit: cover"
+            />
+
+            <a
+              class="navbar-brand"
+              href="https://www.figma.com/file/wgyHSayOr5cXYlcPI8dQri/Pet-Care---Landing-page-(Community)?type=design&node-id=27%3A1&mode=design&t=8SUmdpuvIgssFVe2-1"
+              ><span class="pup">pup</span>hub</a
+            >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto mt-2 mt-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
@@ -69,24 +74,186 @@
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
-            <div class="d-flex">
-              <button class="btn login me-md-3" type="button">Login</button>
-              <button class="btn sign" type="button">Sign Up</button>
-            </div>
+            <button
+              class="btn login me-md-3"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalForm"
+            >
+              Login
+            </button>
+
+            <button
+              class="btn sign"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalSignUp"
+            >
+              Sign Up
+            </button>
           </div>
         </div>
       </div>
     </nav>
-
     <!-- akhir navbar -->
+    <!-- Sign In Modal -->
+    <div
+      class="modal fade"
+      id="ModalForm"
+      tabindex="-1"
+      aria-labelledby="ModalFormLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="SignIn">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="myform">
+              <h1 class="text-center mb-4">Login</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark mt-3 w-100">
+                  LOGIN
+                </button>
+              </form>
+              <div class="text-center mt-3">
+                <p class="text-dark">
+                  Not a member?
+                  <a
+                    href="#"
+                    class="text-dark fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ModalSignUp"
+                    data-bs-dismiss="modal"
+                    >Signup now</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sign In Modal -->
+
+    <!-- Sign Up Modal -->
+    <div
+      class="modal fade"
+      id="ModalSignUp"
+      tabindex="-1"
+      aria-labelledby="ModalSignUpLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center">
+                <!-- Bagian Kiri (Gambar) -->
+                <img
+                  src="/assets/img/signup.png"
+                  alt="dog-image"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div class="col-md-6">
+                <!-- Bagian Kanan (Formulir) -->
+                <div class="myform">
+                  <h1 class="text-center mb-4">Sign Up</h1>
+                  <form>
+                    <div class="mb-3">
+                      <label for="fullname" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="fullname" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Email address</label
+                      >
+                      <input type="email" class="form-control" id="email" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="confirmPassword" class="form-label"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">
+                      Sign Up
+                    </button>
+                  </form>
+                  <div class="text-center mt-3">
+                    <p class="text-dark">
+                      Already a member?
+                      <a
+                        href="#"
+                        class="text-dark fw-bold"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ModalForm"
+                        data-bs-dismiss="modal"
+                        >Login now</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Sign Up Modal -->
 
     <!-- section jumbotron -->
     <section class="jumbotron" id="home">
       <div class="container p-5">
-        <div class="row justify-content-evenly lh-lg">
-          <div class="col-md-4 mt-lg-5 teks" data-aos="zoom-in">
-            <h1 class="text-start">Taking care for your Smart Dog !</h1>
-            <p>
+        <div class="row justify-content-evenly align-items-center lh-lg">
+          <div class="col-md-7 col-lg-6 mt-lg-5" data-aos="zoom-in">
+            <h1 class="">Taking care of your Smart Dog!</h1>
+            <p class="">
               Human-canine bonding is the relationship between dogs and humans.
             </p>
             <button
@@ -98,7 +265,7 @@
               <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
             </button>
           </div>
-          <div class="col-md-4 p-0">
+          <div class="col-md-5 col-lg-6 p-0">
             <img
               src="assets/img/dog.png"
               class="img-fluid"
@@ -119,176 +286,223 @@
     </svg>
     <!-- akhir jumbotron -->
 
+    <!-- tambahan service masuk ke home -->
+    <div class="container text-center">
+      <h2 data-aos="flip-up">Service Category</h2>
+      <div class="row row-cols-2 row-cols-lg-5" data-aos="zoom-out">
+        <div class="col">
+          <img
+            src="assets/img/service-one.png"
+            class="img-fluid-srv w-75"
+            alt="image-one"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/service-two.png"
+            class="img-fluid-srv w-75"
+            alt="image-two"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/service-three.png"
+            class="img-fluid-srv w-75"
+            alt="image-three"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/service-four.png"
+            class="img-fluid-srv w-75"
+            alt="image-four"
+          />
+        </div>
+        <div class="col offset-lg-0 offset-3">
+          <img
+            src="assets/img/service-five.png"
+            class="img-fluid-srv w-75"
+            alt="image-five"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- akhir home -->
+
     <!-- section products -->
     <section class="product" id="products">
-      <h2 class="text-center text" data-aos="zoom-out">Dog Nutrients & Food</h2>
-      <div class="container text-center pt-5">
-        <div class="row justify-content-between">
-          <div class="col-4">
-            <p class="fs-5 text-uppercase" data-aos="fade-right">
-              25% All Of <span class="fw-bold">Products</span>
-            </p>
-          </div>
-          <div class="col-4">
-            <button
-              type="button"
-              onclick="window.location.href='https://www.amazon.in/Dogs-Supplies/b/?ie=UTF8&node=4771342031&ref_=sv_petsupplies_2'"
-              class="btn more"
-              data-aos="fade-left"
-            >
-              View More
-              <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- features 1 -->
-      <div class="container text-center pt-5">
-        <div class="row justify-content-between">
-          <!-- products 1 -->
-          <div class="col-md-4">
-            <img
-              src="assets/img/product-one.png"
-              class="img-fluid w-auto"
-              data-aos="flip-up"
-              alt="image-one"
-            />
-            <div class="text-start" data-aos="zoom-out-up">
-              <p class="fs-3 fw-bold">Drools | 3KG</p>
-              <span
-                >Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food
-              </span>
-              <button
-                type="button"
-                onclick="window.location.href='https://drools.com/'"
-                class="btn buy d-grid gap mt-2"
-              >
-                Buy Now
-              </button>
+      <div class="container p-5">
+        <h2 class="text-center text" data-aos="zoom-out">
+          Dog Nutrients & Food
+        </h2>
+        <div class="container text-center pt-3">
+          <div class="row justify-content-between">
+            <div class="col">
+              <p class="fs-5 text-uppercase" data-aos="fade-right">
+                25% All Of <span class="fw-bold">Products</span>
+              </p>
             </div>
-          </div>
-          <!-- products 2 -->
-          <div class="col-md-4">
-            <img
-              src="assets/img/product-two.png"
-              class="img-fluid w-auto"
-              data-aos="flip-up"
-              alt="image-two"
-            />
-            <div class="text-start" data-aos="zoom-out-up">
-              <p class="fs-3 fw-bold">Canine Creek 4 KG</p>
-              <span
-                >Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food
-              </span>
+            <div class="col">
               <button
                 type="button"
-                onclick="window.location.href='https://www.loyalpetzone.com/products/canine-creek-grain-free-puppy/'"
-                class="btn buy d-grid gap mt-2"
+                onclick="window.location.href='https://www.amazon.in/Dogs-Supplies/b/?ie=UTF8&node=4771342031&ref_=sv_petsupplies_2'"
+                class="btn more"
+                data-aos="fade-left"
               >
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <!-- products 3 -->
-          <div class="col-md-4">
-            <img
-              src="assets/img/product-three.png"
-              class="img-fluid w-auto"
-              data-aos="flip-up"
-              alt="image-three"
-            />
-            <div class="text-start" data-aos="zoom-out-up">
-              <p class="fs-3 fw-bold">Biscork Biscuits</p>
-              <span
-                >Adult chicken and egg Egg, Chicken Dry Adult Dog Food
-              </span>
-              <button
-                type="button"
-                onclick="window.location.href='https://id.miscota.com/dogs/pedigree/biscrok-snacks'"
-                class="btn buy d-grid gap mt-2"
-              >
-                Buy Now
+                View More
+                <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
               </button>
             </div>
           </div>
         </div>
-      </div>
-      <!-- akhir features 1 -->
 
-      <!-- features 2 -->
-      <div class="container text-center pt-5">
-        <div class="row justify-content-between">
-          <!-- products 1 -->
-          <div class="col-md-4">
-            <img
-              src="assets/img/product-four.png"
-              class="img-fluid w-auto"
-              data-aos="flip-up"
-              alt="image-four"
-            />
-            <div class="text-start" data-aos="zoom-out-up">
-              <p class="fs-3 fw-bold">Drools Focus | Chicken Flavo 1.2kg</p>
-              <span
-                >Adequate supply of DHA nourishes nerve cells and aids in brain
-                development
-              </span>
-              <button
-                type="button"
-                onclick="window.location.href='https://www.amazon.in/Drools-Focus-Starter-Super-Premium/dp/B00LE8UCDM/ref=pd_lpo_sccl_3/259-8463533-7021057?pd_rd_w=OhVZM&content-id=amzn1.sym.c3daf87c-2802-47b7-8fa4-23dc91a4fca7&pf_rd_p=c3daf87c-2802-47b7-8fa4-23dc91a4fca7&pf_rd_r=VBX9JTCG97M96E9RA53P&pd_rd_wg=9v7yS&pd_rd_r=1e4e9467-d65f-4f8b-8f89-ee54c5b55690&pd_rd_i=B00LE8UCDM&th=1'"
-                class="btn buy d-grid gap mt-2"
-              >
-                Buy Now
-              </button>
+        <!-- features 1 -->
+        <div class="container text-center pt-3">
+          <div class="row justify-content-between">
+            <!-- products 1 -->
+            <div class="col-md-4 mt-4">
+              <img
+                src="assets/img/product-one.png"
+                class="img-fluid w-75"
+                data-aos="flip-up"
+                alt="image-one"
+              />
+              <div class="text-start mt-3" data-aos="zoom-out-up">
+                <p class="fs-3 fw-bold">Drools | 3KG</p>
+                <span
+                  >Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food
+                </span>
+                <button
+                  type="button"
+                  onclick="window.location.href='https://drools.com/'"
+                  class="btn buy d-grid mt-2"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <!-- products 2 -->
+            <div class="col-md-4 mt-4">
+              <img
+                src="assets/img/product-two.png"
+                class="img-fluid w-75"
+                data-aos="flip-up"
+                alt="image-two"
+              />
+              <div class="text-start mt-4" data-aos="zoom-out-up">
+                <p class="fs-3 fw-bold">Canine Creek 4 KG</p>
+                <span
+                  >Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food
+                </span>
+                <button
+                  type="button"
+                  onclick="window.location.href='https://www.loyalpetzone.com/products/canine-creek-grain-free-puppy/'"
+                  class="btn buy d-grid mt-2"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <!-- products 3 -->
+            <div class="col-md-4 mt-4">
+              <img
+                src="assets/img/product-three.png"
+                class="img-fluid w-75"
+                data-aos="flip-up"
+                alt="image-three"
+              />
+              <div class="text-start mt-1" data-aos="zoom-out-up">
+                <p class="fs-3 fw-bold">Biscork Biscuits</p>
+                <span
+                  >Adult chicken and egg Egg, Chicken Dry Adult Dog Food
+                </span>
+                <button
+                  type="button"
+                  onclick="window.location.href='https://id.miscota.com/dogs/pedigree/biscrok-snacks'"
+                  class="btn buy d-grid mt-2"
+                >
+                  Buy Now
+                </button>
+              </div>
             </div>
           </div>
-          <!-- products 2 -->
-          <div class="col-md-4">
-            <img
-              src="assets/img/product-five.png"
-              class="img-fluid w-auto"
-              data-aos="flip-up"
-              alt="image-five"
-            />
-            <div class="text-start" data-aos="zoom-out-up">
-              <p class="fs-3 fw-bold">
-                Pedigree Adult Dry Dog Food | Meat & Rice, 20kg
-              </p>
-              <span
-                >Complete & balanced dog food, a perfect food for adult dogs
-              </span>
-              <button
-                type="button"
-                onclick="window.location.href='https://www.amazon.in/dp/B095SBWTNH/ref=syn_sd_onsite_desktop_0?ie=UTF8&pd_rd_plhdr=t&th=1'"
-                class="btn buy d-grid gap mt-2"
-              >
-                Buy Now
-              </button>
+        </div>
+        <!-- akhir features 1 -->
+
+        <!-- features 2 -->
+        <div class="container text-center pt-3">
+          <div class="row justify-content-between">
+            <!-- products 1 -->
+            <div class="col-md-4 mt-4">
+              <img
+                src="assets/img/product-four.png"
+                class="img-fluid w-75"
+                data-aos="flip-up"
+                alt="image-four"
+              />
+              <div class="text-start mt-1" data-aos="zoom-out-up">
+                <p class="fs-3 fw-bold">Drools Focus | Chicken Flavo 1.2kg</p>
+                <span
+                  >Adequate supply of DHA nourishes nerve cells and aids in
+                  brain development
+                </span>
+                <button
+                  type="button"
+                  onclick="window.location.href='https://www.amazon.in/Drools-Focus-Starter-Super-Premium/dp/B00LE8UCDM/ref=pd_lpo_sccl_3/259-8463533-7021057?pd_rd_w=OhVZM&content-id=amzn1.sym.c3daf87c-2802-47b7-8fa4-23dc91a4fca7&pf_rd_p=c3daf87c-2802-47b7-8fa4-23dc91a4fca7&pf_rd_r=VBX9JTCG97M96E9RA53P&pd_rd_wg=9v7yS&pd_rd_r=1e4e9467-d65f-4f8b-8f89-ee54c5b55690&pd_rd_i=B00LE8UCDM&th=1'"
+                  class="btn buy d-grid mt-2"
+                >
+                  Buy Now
+                </button>
+              </div>
             </div>
-          </div>
-          <!-- products 3 -->
-          <div class="col-md-4">
-            <img
-              src="assets/img/product-six.png"
-              class="img-fluid w-auto"
-              data-aos="flip-up"
-              alt="image-six"
-            />
-            <div class="text-start" data-aos="zoom-out-up">
-              <p class="fs-3 fw-bold">
-                Pedigree Starter Dry Dog Food With Milk for Pregnant | 1.2kg
-              </p>
-              <span
-                >WITH ESSENTIAL NUTRIENTS: Has essential nutrients to support
-                your pups' growth potential
-              </span>
-              <button
-                type="button"
-                onclick="window.location.href='https://id.miscota.com/dogs/pedigree/biscrok-snacks'"
-                class="btn buy d-grid gap mt-2"
-              >
-                Buy Now
-              </button>
+            <!-- products 2 -->
+            <div class="col-md-4 mt-4">
+              <img
+                src="assets/img/product-five.png"
+                class="img-fluid w-75"
+                data-aos="flip-up"
+                alt="image-five"
+              />
+              <div class="text-start mt-4" data-aos="zoom-out-up">
+                <p class="fs-3 fw-bold">
+                  Pedigree Adult Dry Dog Food | Meat & Rice, 20kg
+                </p>
+                <span
+                  >Complete & balanced dog food, a perfect food for adult dogs
+                </span>
+                <button
+                  type="button"
+                  onclick="window.location.href='https://www.amazon.in/dp/B095SBWTNH/ref=syn_sd_onsite_desktop_0?ie=UTF8&pd_rd_plhdr=t&th=1'"
+                  class="btn buy d-grid mt-2"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <!-- products 3 -->
+            <div class="col-md-4 mt-4">
+              <img
+                src="assets/img/product-six.png"
+                class="img-fluid w-75"
+                data-aos="flip-up"
+                alt="image-six"
+              />
+              <div class="text-start mt-4" data-aos="zoom-out-up">
+                <p class="fs-3 fw-bold">
+                  Pedigree Starter Dry Dog Food With Milk | 1.2kg
+                </p>
+                <span
+                  >WITH ESSENTIAL NUTRIENTS: Has essential nutrients to support
+                  your pups' growth potential
+                </span>
+                <button
+                  type="button"
+                  onclick="window.location.href='https://id.miscota.com/dogs/pedigree/biscrok-snacks'"
+                  class="btn buy d-grid mt-2"
+                >
+                  Buy Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -317,5 +531,6 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Template JS -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
   </body>
 </html>
