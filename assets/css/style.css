@@ -84,6 +84,36 @@ button.buy:hover {
   color: #fff;
   background-color: #124c5f;
 }
+
+/* section products */
+div.products {
+  transform-style: preserve-3d;
+}
+
+div.products::before {
+  transform: translate(-50%, 0);
+}
+
+div.products:hover::before {
+  opacity: 0.2;
+}
+
+img.products-img {
+  transform: translate3d(-50%, -52%, 80px);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+div.products::after {
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+div.products:hover::after {
+  opacity: 0.2;
+}
+
 /* Modal */
 #SignIn {
   background-image: url(https://png.pngtree.com/png-vector/20230221/ourmid/pngtree-cute-dog-vector-png-image_6612077.png);
