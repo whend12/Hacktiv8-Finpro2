@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
 
+/* navbar */
 a.navbar-brand {
   color: #ffe55e;
   font-family: "Poppins", sans-serif;
@@ -37,10 +38,6 @@ nav.navbar {
   opacity: 80%;
 }
 
-.jumbotron {
-  background-color: rgba(255, 242, 179, 0.34);
-}
-
 button.login {
   background-color: #c7e7e1;
   color: #124c5f;
@@ -63,6 +60,11 @@ button.sign:hover {
   color: #124c5f;
 }
 
+/* section jumbotron */
+.jumbotron {
+  background-color: rgba(255, 242, 179, 0.34);
+}
+
 button.more {
   background-color: #124c5f;
   color: #fff;
@@ -73,16 +75,6 @@ button.more:hover {
   background-color: #c7e7e1;
   color: #124c5f;
   border: 1px solid #124c5f;
-}
-
-button.buy {
-  color: #124c5f;
-  border: 1px solid #124c5f;
-}
-
-button.buy:hover {
-  color: #fff;
-  background-color: #124c5f;
 }
 
 /* img service */
@@ -122,6 +114,16 @@ div.products::after {
 
 div.products:hover::after {
   opacity: 0.2;
+}
+
+button.buy {
+  color: #124c5f;
+  border: 1px solid #124c5f;
+}
+
+button.buy:hover {
+  color: #fff;
+  background-color: #124c5f;
 }
 
 /* Modal */
