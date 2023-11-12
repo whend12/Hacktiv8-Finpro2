@@ -78,12 +78,14 @@ button.more:hover {
 }
 
 /* img service */
-img.img-fluid-srv {
+img.img-fluid-srv,
+img.card-img {
   transition: transform 0.3s;
   cursor: pointer;
 }
 
-img.img-fluid-srv:hover {
+img.img-fluid-srv:hover,
+img.card-img:hover {
   transform: scale(1.1);
 }
 
@@ -141,6 +143,10 @@ button.buy:hover {
 /* End Modal */
 
 /* About Us*/
+#about {
+  background-color: rgba(255, 242, 179, 0.34);
+}
+
 .about-container {
   display: flex;
   justify-content: center;
