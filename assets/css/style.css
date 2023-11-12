@@ -364,3 +364,93 @@ button.buy:hover {
     display: none;
   }
 }
+.paragraf{
+    font-size: 16px;
+    padding-top: 2px;
+    color: #6a6f6f;
+    font-weight: 600;
+}
+.judul2{
+    font-weight: bold;
+    font-size: 12px;
+}
+.style_notelp{
+    color: #0c2d40;;
+    font-weight: 700;
+    font-size: 24px;
+}
+.font-neue{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'Bebas Neue';
+    letter-spacing: -1px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #213f4f;
+}
+.style_amplop{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+.style_logo{
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+.style_logo2{
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+    margin-left: 1px;
+}
+.style_arrow{
+    width: 11px;
+    height: 11px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+}
+body{
+    background-color:#9b9ba3;
+}
+.s-footer{
+    font-size: 16px;
+}
+.container_utama{
+    background-color:#b3b9b9;
+    width: 100%;
+    height: 100vh; 
+}
+.container_input{
+    background-color:#cdd4d4;
+    width: 650px;
+    height: 100px;
+    margin: auto;
+    margin-top: 30px;   
+    box-shadow: 0 0 2px #cdd4d4;
+}
+.container_input input{
+    background-color: #cfd5d5;
+    border: none; 
+    outline: none;
+    width: 230px;
+    margin-left: 8px;
+    margin-top: 35px;
+}
+.container_input button{
+    margin-left: 160px;
+    background-color: #002a40;
+    width: 140px;
+    height: 55px;
+    color: #caced2;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.wadah_foto{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #808080; 
+    margin: 8px;
+}
