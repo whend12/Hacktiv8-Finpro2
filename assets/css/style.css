@@ -256,6 +256,7 @@ button.buy:hover {
   align-items: center;
   flex-direction: column;
   padding: 10px 14px;
+  margin-top: -18px;
 }
 .image-content {
   position: relative;
@@ -287,17 +288,20 @@ button.buy:hover {
 }
 .card-image {
   position: relative;
+  margin: 0;
   height: 150px;
   width: 150px;
   padding: 3px;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .card-image .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border: none;
+  border-radius: 50%;
+  display: block;
 }
 .name {
   color: #000;
@@ -419,12 +423,4 @@ body {
 }
 .s-footer {
   font-size: 16px;
-}
-
-.wadah_foto {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #808080;
-  margin: 8px;
 }
