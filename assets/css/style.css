@@ -88,42 +88,36 @@ img.img-fluid-srv:hover {
 }
 
 /* section products */
-div.products {
-  transform-style: preserve-3d;
+.left,
+.three {
+  border-radius: 3.75rem;
+  background-color: rgba(255, 242, 179, 0.2);
 }
 
-div.products::before {
-  transform: translate(-50%, 0);
+a.get-products {
+  border: 2px solid #fff1a6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
-div.products:hover::before {
-  opacity: 0.2;
+a.get-products:hover {
+  background-color: #fff1a6;
 }
 
-img.products-img {
-  transform: translate3d(-50%, -52%, 80px);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-div.products::after {
-  transform: translate(-50%, 0);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-div.products:hover::after {
-  opacity: 0.2;
-}
-
-button.buy {
+.text-size {
   color: #124c5f;
-  border: 1px solid #124c5f;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-button.buy:hover {
-  color: #fff;
-  background-color: #124c5f;
+.features {
+  background-color: #fa0;
+  width: 10%;
+}
+
+p.text {
+  position: absolute;
+  background-color: #f2f6ff;
+  justify-content: center;
 }
 
 /* Modal */
