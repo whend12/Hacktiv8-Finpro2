@@ -136,7 +136,7 @@ button.buy:hover {
 }
 
 #SignIn {
-  background-image: url(https://png.pngtree.com/png-vector/20230221/ourmid/pngtree-cute-dog-vector-png-image_6612077.png);
+  background-image: url("/assets/img/sigin.png");
   background-repeat: cover;
   background-position: center;
 }
