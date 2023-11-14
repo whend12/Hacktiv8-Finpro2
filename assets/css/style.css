@@ -14,6 +14,10 @@ a.cta {
   color: #fa0 !important;
 }
 
+i.fa-solid:hover {
+  color: #fff !important;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
