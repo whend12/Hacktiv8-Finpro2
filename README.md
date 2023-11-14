@@ -1,6 +1,6 @@
  <div align="center">
   <a href="https://www.figma.com/file/oDqfeZesCm2ivOpkLqeBi8/startup-web-ui-kit-designtech?type=design&node-id=0%3A1&mode=design&t=Y7V4Mczf2c7NzLMT-1">
-    <img src="https://github.com/whend12/Hacktiv8-Finpro2/assets/119909214/1e9ba0d8-5fc9-4c52-8ca8-339534dfdad6" alt="Profile" width="auto" object-fit="cover">
+    <img src="https://github.com/whend12/Hacktiv8-Finpro2/assets/119909214/3c2d3db7-4657-4f12-9dc4-a764a66677a3" alt="Profile" width="100px" object-fit="cover">
   </a>
   <h2 style="font-size:30px;" align="center">
     <strong>
