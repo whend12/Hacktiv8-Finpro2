@@ -357,43 +357,79 @@ button.buy:hover {
 }
 
 /* Contact and Footer */
-.paragraf {
-  font-size: 16px;
-  padding-top: 2px;
-  color: #6a6f6f;
-  font-weight: 600;
+body {
+    font-size: 16px;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1.5;
+    color: #000;
 }
-.judul2 {
-  font-weight: bold;
-  font-size: 12px;
+h1,
+h2,
+h3,
+h6 {
+    margin-bottom: 1rem;
+    color: #000;
+    font-size: 18px;
 }
-.style_notelp {
-  color: #0c2d40;
-  font-weight: 700;
-  font-size: 24px;
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    margin-bottom: 1em;
 }
-.style_amplop {
-  width: 25px;
-  height: 25px;
-  margin-left: 20px;
+p {
+    font-size: 15px;
+    margin-bottom: 1em;
+    color: #000;
 }
-.style_logo {
-  width: 25px;
-  height: 25px;
-  margin-top: 12px;
-  margin-left: 5px;
+form button {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: 7px;
+    height: 36px;
+    cursor: pointer;
+    color: white;
+    background-color: #d8c98e;
+    transform: translateX(-4px);
 }
-.style_logo2 {
-  width: 25px;
-  height: 25px;
-  margin-top: 12px;
-  margin-left: 1px;
+.btn-email {
+    background-color: #d9c15f;
 }
-.style_arrow {
-  width: 11px;
-  height: 11px;
-  margin-left: 15px;
-  margin-bottom: 2px;
+.btn-email:hover {
+    background-color: #b19521;
+}
+.input-email {
+    border: none;
+    height: 50px;
+}
+.form-groups {
+    width: 400px;
+    position: relative;
+}
+.container {
+    padding: 1rem;
+}
+#newsletter {
+    background-color: #FFFAE6;
+    border: none;
+    border-radius: 50px;
+}
+.content-container {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.content {
+    width: 240px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.bold {
+    font-weight: bold;
 }
 #copyright {
   padding: 10px;
