@@ -10,6 +10,10 @@
   color: #fa0;
 }
 
+.head-transform {
+  font-family: "Bebas Neue", sans-serif;
+}
+
 a.explore-more {
   color: #fa0 !important;
 }
@@ -147,14 +151,14 @@ main {
   background-color: var(--color-primary);
 }
 
-.product-description a.cta {
+.product-description a.explore-more {
   border: 2px solid var(--color-primary);
   padding: 15px 40px;
   border-radius: 999px;
   transition: all 0.3s linear;
 }
 
-.product-description a.cta:hover {
+.product-description a.explore-more:hover {
   background-color: var(--color-primary);
   color: #fff !important;
 }
