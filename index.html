@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pet Care</title>
+    <title>Business Marketing</title>
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/35dd348907.js"
       crossorigin="anonymous"
     ></script>
     <!-- icons website -->
-    <link rel="shortcut icon" href="assets/img/trace.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/icon/business.png"
+      type="image/x-icon"
+    />
     <!-- bootstrap icons -->
     <link
       rel="stylesheet"
@@ -27,368 +31,301 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg home">
-      <div class="container">
-        <div class="container-fluid fw-bold">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse mt-2"
-            data-aos="fade-down"
-            id="navbarTogglerDemo01"
-          >
-            <img
-              src="assets/img/trace.png"
-              alt="Logo"
-              width="20"
-              height="20"
-              class="d-inline-block align-text-top"
-              style="object-fit: cover"
-            />
-
-            <a
-              class="navbar-brand"
-              href="https://www.figma.com/file/wgyHSayOr5cXYlcPI8dQri/Pet-Care---Landing-page-(Community)?type=design&node-id=27%3A1&mode=design&t=8SUmdpuvIgssFVe2-1"
-              ><span class="pup">pup</span>hub</a
-            >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#products">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-            <button
-              class="btn login me-md-3"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#ModalForm"
-            >
-              Login
-            </button>
-
-            <button
-              class="btn sign"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#ModalSignUp"
-            >
-              Sign Up
-            </button>
-          </div>
-        </div>
-      </div>
-    </nav>
     <!-- akhir navbar -->
-    <!-- Sign In Modal -->
-    <div
-      class="modal fade"
-      id="ModalForm"
-      tabindex="-1"
-      aria-labelledby="ModalFormLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" id="SignIn">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="btn-close btn-close-dark"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-            <div class="myform">
-              <h1 class="text-center mb-4">Login</h1>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Email address</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>
-                <button type="submit" class="btn btn-dark mt-3 w-100">
-                  LOGIN
-                </button>
-              </form>
-              <div class="text-center mt-3">
-                <p class="text-dark">
-                  Not a member?
-                  <a
-                    href="#"
-                    class="text-dark fw-bold"
-                    data-bs-toggle="modal"
-                    data-bs-target="#ModalSignUp"
-                    data-bs-dismiss="modal"
-                    >Signup now</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Sign In Modal -->
 
-    <!-- Sign Up Modal -->
-    <div
-      class="modal fade"
-      id="ModalSignUp"
-      tabindex="-1"
-      aria-labelledby="ModalSignUpLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="btn-close btn-close-dark"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-            <div class="row">
-              <div class="col-md-6 d-flex align-items-center">
-                <!-- Bagian Kiri (Gambar) -->
-                <img
-                  src="/assets/img/signup.png"
-                  alt="dog-image"
-                  class="img-fluid w-100"
-                />
-              </div>
-              <div class="col-md-6">
-                <!-- Bagian Kanan (Formulir) -->
-                <div class="myform">
-                  <h1 class="text-center mb-4">Sign Up</h1>
-                  <form>
-                    <div class="mb-3">
-                      <label for="fullname" class="form-label">Full Name</label>
-                      <input type="text" class="form-control" id="fullname" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label"
-                        >Email address</label
-                      >
-                      <input type="email" class="form-control" id="email" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="password" class="form-label">Password</label>
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="password"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="confirmPassword" class="form-label"
-                        >Confirm Password</label
-                      >
-                      <input
-                        type="password"
-                        class="form-control"
-                        id="confirmPassword"
-                      />
-                    </div>
-                    <button type="submit" class="btn btn-dark w-100">
-                      Sign Up
-                    </button>
-                  </form>
-                  <div class="text-center mt-3">
-                    <p class="text-dark">
-                      Already a member?
-                      <a
-                        href="#"
-                        class="text-dark fw-bold"
-                        data-bs-toggle="modal"
-                        data-bs-target="#ModalForm"
-                        data-bs-dismiss="modal"
-                        >Login now</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- End Sign Up Modal -->
-
-    <!-- section jumbotron -->
-    <section class="jumbotron" id="home">
-      <div class="container p-5">
-        <div class="row justify-content-evenly align-items-center lh-lg">
-          <div class="col-md-7 col-lg-6 mt-lg-5" data-aos="zoom-in">
-            <h1 class="">Taking care of your Smart Dog!</h1>
-            <p class="">
-              Human-canine bonding is the relationship between dogs and humans.
-            </p>
-            <button
-              type="button"
-              onclick="window.location.href='https://www.thesprucepets.com/cute-dog-breeds-we-can-t-get-enough-of-4589340'"
-              class="btn more"
-            >
-              Explore More
-              <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
-            </button>
-          </div>
-          <div class="col-md-5 col-lg-6 p-0">
-            <img
-              src="assets/img/dog.png"
-              class="img-fluid"
-              data-aos="flip-up"
-              alt="dog"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- get waves -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#fff2b3"
-        fill-opacity="0.34"
-        d="M0,192L80,165.3C160,139,320,85,480,101.3C640,117,800,203,960,202.7C1120,203,1280,117,1360,74.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
-      ></path>
-    </svg>
+    <!-- jumbotron -->
     <!-- akhir jumbotron -->
 
-    <!-- tambahan service masuk ke home -->
-    <div class="container text-center">
-      <h2 data-aos="flip-up">Service Category</h2>
-      <div class="row row-cols-2 row-cols-lg-5" data-aos="zoom-out">
-        <div class="col">
-          <img
-            src="assets/img/service-one.png"
-            class="img-fluid-srv w-75"
-            alt="image-one"
-          />
-        </div>
-        <div class="col">
-          <img
-            src="assets/img/service-two.png"
-            class="img-fluid-srv w-75"
-            alt="image-two"
-          />
-        </div>
-        <div class="col">
-          <img
-            src="assets/img/service-three.png"
-            class="img-fluid-srv w-75"
-            alt="image-three"
-          />
-        </div>
-        <div class="col">
-          <img
-            src="assets/img/service-four.png"
-            class="img-fluid-srv w-75"
-            alt="image-four"
-          />
-        </div>
-        <div class="col offset-lg-0 offset-3">
-          <img
-            src="assets/img/service-five.png"
-            class="img-fluid-srv w-75"
-            alt="image-five"
-          />
-        </div>
-      </div>
-    </div>
-    <!-- akhir home -->
-
-    <!-- section products -->
-    <section class="product" id="products">
-      <div class="container-fluid overflow-hidden my-5 px-lg-0">
-        <div class="container px-lg-0">
-          <div class="row g-0 mx-lg-0">
-            <div class="col-lg-6 ps-lg-0" style="min-height: 400px">
-              <div class="h-100 left">
-                <div class="container features">
-                  <div class="col">
-                    <p class="text text-center p-2 rounded-pill">AJ</p>
+    <!-- products and features -->
+    <section id="product">
+      <section id="banner product and features">
+        <main class="mb-5">
+          <div class="container">
+            <section
+              id="download"
+              class="row align-items-center justify-content-center"
+            >
+              <div
+                class="notifications col col-md-6 d-flex flex-column align-items-center gap-4 justify-content-center bg-gray"
+                data-aos="fade-right"
+              >
+                <div
+                  class="notif notif-1 d-flex justify-content-between align-items-center bg-sction shadow"
+                >
+                  <div
+                    class="profile text-warning profile-img-1 bg-gray d-flex align-items-center justify-content-center rounded-pill position-relative"
+                    data-chat="2"
+                  >
+                    AJ
                   </div>
-                  <div class="col">
-                    <p>Andrew Johnson</p>
-                    <p>I have seen that you are availabl…</p>
+                  <div class="flex">
+                    <div>
+                      <span class="name name-1 fw-bold mb-1 txt">
+                        Andrew Johnson
+                      </span>
+                      <p class="message message-1 txt">
+                        I have seen that you are availabl…
+                      </p>
+                    </div>
                   </div>
+                  <span class="d-flex align-self-start time-1 times"
+                    >1:03 PM</span
+                  >
+                </div>
+                <div
+                  class="notif notif-2 d-flex justify-content-between align-items-center bg-sction shadow"
+                >
+                  <div
+                    class="profile text-warning profile-img-2 bg-gray d-flex align-items-center justify-content-center rounded-pill position-relative"
+                    data-chat="1"
+                  >
+                    DL
+                  </div>
+                  <div class="flex">
+                    <div>
+                      <h6 class="name name-2 fw-bold mb-1 txt">Daniel Luke</h6>
+                      <p class="message message-2 txt">
+                        Would you like to have a meetin…
+                      </p>
+                    </div>
+                  </div>
+                  <span class="align-self-start time-2 times"> 5:27 AM </span>
+                </div>
+                <div
+                  class="notif notif-3 d-flex justify-content-between align-items-center bg-sction shadow"
+                >
+                  <div
+                    class="profile text-warning profile-img-3 bg-gray d-flex align-items-center justify-content-center rounded-pill position-relative"
+                    data-chat="4"
+                  >
+                    MC
+                  </div>
+                  <div>
+                    <span class="name name-3 fw-bold mb-1 txt"
+                      >Mark Clarke</span
+                    >
+                    <p class="message message-3 txt">
+                      This was such a busy week. I can…
+                    </p>
+                  </div>
+                  <span class="align-self-start time-3 times"> 2:08 AM </span>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6 product-text py-5">
-              <div class="p-lg-5 pe-lg-0">
-                <h1 class="mb-4 text-warning">
+
+              <div
+                class="download-description col col-md-6 mt-3 p-5 d-flex flex-column justify-content-center justify-content-md-center"
+                data-aos="fade-left"
+              >
+                <h1
+                  class="fw-bold title mb-3 txt text-center text-md-start flex-1"
+                >
                   Use our app to send messages to your team
                 </h1>
-                <p class="text-warning">
+                <h6
+                  class="description mb-md-5 my-4 txt text-center text-md-start"
+                >
                   We offer really easy communications for all businesses from
                   small to large.
-                </p>
+                </h6>
                 <a
-                  href=""
-                  class="btn get-products rounded-pill py-3 px-5 mt-3 text-warning"
+                  href="https://www.figma.com/file/oDqfeZesCm2ivOpkLqeBi8/startup-web-ui-kit-designtech?type=design&node-id=0%3A1&mode=design&t=Y7V4Mczf2c7NzLMT-1"
+                  class="cta fw-bold btn mx-auto ms-md-0"
                   >Get the app</a
                 >
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container text-center">
-        <h1 class="text-size">Taking care of your Smart Dog!</h1>
-        <span class="fw-semibold">
-          Human-canine bonding is the relationship between dogs and humans.
-        </span>
-      </div>
-      <div class="container three pb-3">
-        <div class="message text-bg-light p-lg-5 pe-lg-0">
-          <p class="text-warning">message saved</p>
-          <span class="text-warning"
-            >You have successfully saved this message</span
-          >
-        </div>
-      </div>
+            </section>
 
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#fff2b3"
-          fill-opacity="0.34"
-          d="M0,160L40,170.7C80,181,160,203,240,186.7C320,171,400,117,480,90.7C560,64,640,64,720,90.7C800,117,8 80,171,960,176C1040,181,1120,139,1200,133.3C1280,128,1360,160,1400,176L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-        ></path>
-      </svg> -->
+            <section
+              id="transform"
+              class="d-flex flex-column"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <div class="mx-auto text-center header">
+                <h1
+                  class="fw-bold txt"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  Transform your communications
+                </h1>
+                <p
+                  class="max-w-sm mx-auto txt"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  Our mobile app is the only thing you need to change the way
+                  you communicate with your team
+                </p>
+              </div>
+
+              <div class="container bg-gray cards position-relative">
+                <div
+                  class="d-flex align-items-center justify-content-center mt-md-5 mx-auto"
+                >
+                  <div class="left-cards d-flex flex-column">
+                    <div
+                      class="msge component d-flex align-items-center bg-sction"
+                    >
+                      <div class="icon-img bg-gray">
+                        <img
+                          src="assets/img/message.svg"
+                          alt="message"
+                          class="mx-3 mt-3"
+                        />
+                      </div>
+                      <div>
+                        <h6 class="txt">Message Saved</h6>
+                        <p class="txt mb-0">
+                          You have successfully saved this message
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="msge-x component bg-sction d-flex align-self-end mt-3"
+                    >
+                      <img
+                        src="assets/img/msg.svg"
+                        alt="message"
+                        class="m-auto"
+                      />
+                    </div>
+                  </div>
+                  <div class="right-cards ms-3">
+                    <div class="d-flex align-items-end">
+                      <div
+                        class="file component d-flex justify-content-center align-items-center bg-sction"
+                      >
+                        <img src="assets/img/file.svg" alt="file-icon" />
+                      </div>
+                      <div
+                        class="book component bg-sction d-flex ms-3 align-items-center"
+                      >
+                        <div
+                          class="profile txt fw-bold bg-gray rounded-pill d-flex justify-content-center align-items-center position-relative"
+                          data-chat="1"
+                        >
+                          SB
+                        </div>
+                        <div class="d-flex ms-3">
+                          <div>
+                            <span class="name-chat txt fw-bold"
+                              >Spencer Brooks</span
+                            >
+                            <p class="msg-chat txt">
+                              Have you seen the project requi…
+                            </p>
+                          </div>
+                          <span class="align-self-start time"> 3:08 PM </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex mt-3">
+                      <div
+                        class="sales component bg-sction d-flex flex-column justify-content-between"
+                      >
+                        <div class="d-flex align-items-center">
+                          <div
+                            class="icon-img d-flex justify-content-center align-items-center"
+                          >
+                            <img src="assets/img/sales.svg" alt="sales" />
+                          </div>
+                          <div class="ms-3">
+                            <h5 class="txt fw-bold mb-1 title">
+                              Sales Meeting
+                            </h5>
+                            <p class="txt dat mb-0">10:30 AM 05 May 2020</p>
+                          </div>
+                        </div>
+                        <div class="d-flex profiles">
+                          <div
+                            class="profile-img bg-gray rounded-pill d-flex align-items-center justify-content-center txt"
+                          >
+                            KR
+                          </div>
+                          <div
+                            class="profile-img bg-gray rounded-pill d-flex align-items-center justify-content-center txt"
+                          >
+                            MJ
+                          </div>
+                          <div
+                            class="profile-img bg-gray rounded-pill d-flex align-items-center justify-content-center txt"
+                          >
+                            OI
+                          </div>
+                          <div
+                            class="profile-img bg-gray rounded-pill d-flex align-items-center justify-content-center txt"
+                          >
+                            +3
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="upload component d-flex bg-sction ms-3 align-items-center"
+                      >
+                        <div
+                          class="profile-img rounded-pill d-flex bg-gray justify-content-center align-items-center position-relative"
+                        >
+                          <img src="assets/img/doc.svg" alt="uploads" />
+                        </div>
+                        <div class="ms-3">
+                          <h5 class="mb-1 txt fw-bold title">
+                            Uploading Document
+                          </h5>
+                          <p class="mb-0 txt size">27,09/ 78,93 GB</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="book component bg-sction d-flex mt-3 align-items-center"
+                    >
+                      <div
+                        class="profile txt fw-bold bg-gray rounded-pill d-flex justify-content-center align-items-center position-relative"
+                        data-chat="2"
+                      >
+                        AS
+                      </div>
+                      <div class="d-flex ms-3">
+                        <div>
+                          <span class="name-chat txt fw-bold">Amy Smith</span>
+                          <p class="msg-chat txt">
+                            Could please call me now? It is i…
+                          </p>
+                        </div>
+                        <span class="align-self-start time">5:18 PM</span>
+                      </div>
+                    </div>
+
+                    <div
+                      class="cloud component d-flex flex-column align-items-center justify-content-between mt-3 bg-sction position-absolute"
+                    >
+                      <div
+                        class="profile-img bg-gray rounded-pill d-flex justify-content-center align-items-center mb-0 position-relative"
+                      >
+                        <img src="assets/img/progress.svg" alt="progress" />
+                      </div>
+                      <p class="txt mb-0">6,02/ 7,98 GB</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </section>
     </section>
+    <!-- akhir product and features -->
+
+    <!-- about and pricing -->
+
+    <!-- akhir about and pricing -->
+
+    <!-- contact and form -->
+    <!-- akhir contact and form -->
 
     <!-- js getwaves -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -402,7 +339,7 @@
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Template JS -->
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
     <!-- Animasi AOS -->
     <script src="assets/js/aos.js"></script>
     <!-- Tilt js -->
