@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
 
+/* bagian navbar dan jumbotron */
 /* navbar */
 a.navbar-brand {
   color: #ffe55e;
@@ -141,7 +142,7 @@ img.card3 {
   border-radius: 25px;
   background-color: #ffd28f;
   display: flex;
-  padding: 10px; /* Padding untuk memberikan ruang di dalam balon obrolan */
+  padding: 10px;
   position: relative;
 }
 
@@ -163,7 +164,7 @@ img.card4 {
 }
 
 .column {
-  margin-top: auto; /* Sesuaikan margin atas sesuai kebutuhan */
+  margin-top: auto;
 }
 
 .grid-4:before,
@@ -217,7 +218,7 @@ img.img5 {
   background-color: #ffd28f;
   display: flex;
   margin-top: 50px;
-  padding: 10px; /* Padding untuk memberikan ruang di dalam balon obrolan */
+  padding: 10px;
   position: relative;
 }
 
@@ -239,7 +240,7 @@ img.card6 {
 }
 
 .column {
-  margin-top: auto; /* Sesuaikan margin atas sesuai kebutuhan */
+  margin-top: auto;
 }
 
 .grid-6:before,
@@ -296,6 +297,10 @@ img.card7 {
   align-items: center;
 }
 
+img.bg-background {
+  background-color: #fff2b3;
+}
+
 /* Tampilan mobile */
 @media (max-width: 767px) {
   .jumbotron {
@@ -317,20 +322,7 @@ img.card7 {
     margin-top: 20px;
   }
 }
-
 /* ================================ end of grid ==============================================*/
-
-button.more {
-  background-color: #124c5f;
-  color: #fff;
-  cursor: pointer;
-}
-
-button.more:hover {
-  background-color: #c7e7e1;
-  color: #124c5f;
-  border: 1px solid #124c5f;
-}
 
 /* img service */
 img.img-fluid-srv,
@@ -344,58 +336,6 @@ img.card-img:hover {
   transform: scale(1.1);
 }
 
-/* section products */
-div.products {
-  transform-style: preserve-3d;
-}
-
-div.products::before {
-  transform: translate(-50%, 0);
-}
-
-div.products:hover::before {
-  opacity: 0.2;
-}
-
-img.products-img {
-  transform: translate3d(-50%, -52%, 80px);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-div.products::after {
-  transform: translate(-50%, 0);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-div.products:hover::after {
-  opacity: 0.2;
-}
-
-button.buy {
-  color: #124c5f;
-  border: 1px solid #124c5f;
-}
-
-button.buy:hover {
-  color: #fff;
-  background-color: #124c5f;
-}
-
-/* Modal */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#SignIn {
-  background-image: url("/assets/img/sigin.png");
-  background-repeat: cover;
-  background-position: center;
-}
-/* End Modal */
 .service-1 {
   margin-right: 450px;
   font-size: small;
@@ -411,283 +351,4 @@ button.buy:hover {
   font-weight: 400;
   line-height: 36px; /* 163.636% */
 }
-/* Untuk tampilan mobile */
-/* Tampilan mobile */
-@media (max-width: 767px) {
-  .mb-3 {
-    margin-bottom: 20px;
-  }
-  .text-start {
-    text-align: center !important;
-    margin-top: 10px;
-  }
-}
-
-/* Tampilan desktop */
-@media (min-width: 768px) {
-  .mb-3 {
-    margin-right: 20px;
-  }
-}
-
-/* About Us*/
-#about {
-  background-color: rgba(255, 242, 179, 0.34);
-}
-
-.about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.img-about {
-  max-width: 43%;
-  height: auto;
-  padding: 0 10px;
-}
-
-.about-content {
-  max-width: 600px;
-  padding: 0 10px;
-  text-align: left;
-}
-
-.about-title {
-  margin-top: 20px;
-}
-
-.about-content h1 {
-  color: #000;
-  font-size: 2.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.10625rem;
-  margin-bottom: 20px;
-}
-
-.about-content p {
-  color: #4e4c46;
-  font-size: 1.1875rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 137.9%;
-  letter-spacing: 0.05938rem;
-  margin-bottom: 35px;
-}
-
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .img-about,
-  .about-content,
-  .about-title {
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .about-content {
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-
-  input.form-control {
-    font-size: 14px;
-  }
-}
-
-/* Pricing */
-.pricing {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.slide-container {
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-}
-
-.slide-content {
-  padding: 45px 20px;
-  margin: 0 40px;
-}
-.card {
-  border-radius: 40px 40px 25px 25px;
-  background-color: #fff;
-}
-.image-content,
-.card-content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px 14px;
-  margin-top: -18px;
-}
-.image-content {
-  position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-.overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background-color: #ddd;
-  border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #ddd;
-}
-.overlay::after {
-  border-radius: 0 25px 0 0;
-  background-color: #fff;
-}
-.card-image {
-  position: relative;
-  margin: 0;
-  height: 150px;
-  width: 150px;
-  padding: 3px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.card-image .card-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-}
-.name {
-  color: #000;
-  text-align: center;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.5rem;
-}
-.desc {
-  color: #124c5f;
-  text-align: center;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2rem;
-}
-.btn-price {
-  color: #124c5f;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 700;
-  border: 1px solid #124c5f;
-  padding: 8px 16px;
-  background-color: #fff;
-  border-radius: 10px;
-  margin: 14px;
-}
-.btn-price:hover {
-  background-color: #124c5f;
-  color: #fff;
-  transition: all 0.3s ease;
-}
-.swiper-navBtn:hover {
-  color: #124c5f;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-  font-size: 40px;
-}
-.swiper-button-next {
-  right: 0;
-}
-.swiper-button-prev {
-  left: 0;
-}
-.price {
-  color: #124c5f;
-  text-align: center;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 3rem;
-}
-@media screen and (max-width: 768px) {
-  .slide-content {
-    margin: 0 10px;
-  }
-  .swiper-navBtn {
-    display: none;
-  }
-}
-
-/* Contact and Footer */
-.paragraf {
-  font-size: 16px;
-  padding-top: 2px;
-  color: #6a6f6f;
-  font-weight: 600;
-}
-.judul2 {
-  font-weight: bold;
-  font-size: 12px;
-}
-.style_notelp {
-  color: #0c2d40;
-  font-weight: 700;
-  font-size: 24px;
-}
-.style_amplop {
-  width: 25px;
-  height: 25px;
-  margin-left: 20px;
-}
-.style_logo {
-  width: 25px;
-  height: 25px;
-  margin-top: 12px;
-  margin-left: 5px;
-}
-.style_logo2 {
-  width: 25px;
-  height: 25px;
-  margin-top: 12px;
-  margin-left: 1px;
-}
-.style_arrow {
-  width: 11px;
-  height: 11px;
-  margin-left: 15px;
-  margin-bottom: 2px;
-}
-#copyright {
-  padding: 10px;
-  background-color: rgba(255, 242, 179, 0.34);
-}
-.s-footer {
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-}
+/* akhir bagian navbar dan jumbotron */

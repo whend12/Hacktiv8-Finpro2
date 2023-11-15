@@ -1,17 +1,17 @@
- <div align="center">
-  <a href="https://www.figma.com/file/wgyHSayOr5cXYlcPI8dQri/Pet-Care---Landing-page-(Community)?type=design&node-id=27%3A1&mode=design&t=mZ0Q5lQH5Bh2fTym-1">
-    <img src="https://github.com/whend12/Hacktiv8-Finpro2/assets/119909214/1e9ba0d8-5fc9-4c52-8ca8-339534dfdad6" alt="Profile" width="auto" object-fit="cover">
+<div align="center">
+  <a href="https://www.figma.com/file/oDqfeZesCm2ivOpkLqeBi8/startup-web-ui-kit-designtech?type=design&node-id=0%3A1&mode=design&t=Y7V4Mczf2c7NzLMT-1">
+    <img src="https://github.com/whend12/Hacktiv8-Finpro2/assets/119909214/3c2d3db7-4657-4f12-9dc4-a764a66677a3" alt="Profile" width="100px" object-fit="cover">
   </a>
   <h2 style="font-size:30px;" align="center">
     <strong>
-      <span>Pet Care | Pup Hub</span>
+      <span>Landing Page | Business Marketing</span>
     </strong>
   </h2>
 </div>
 
 ## Introduction
 
-Selamat datang di proyek final Hacktiv8 kami! Website landing pages "Pet Care" kami hadir dengan fitur-fitur unggulan yang dirancang khusus untuk memenuhi segala kebutuhan perawatan hewan peliharaan Anda. Dibuat dengan menggunakan HTML, CSS, dan JavaScript, "Pet Care" siap memberikan pengalaman belanja yang optimal untuk Anda dan hewan kesayangan Anda. Terima kasih telah memilih "Pet Care" sebagai toko pilihan Anda.
+Selamat datang di proyek final Hacktiv8 kami! Kami dengan bangga mempersembahkan website landing page "Business Marketing" yang telah kami rancang dengan penuh dedikasi menggunakan HTML, CSS, dan JavaScript. Dengan desain yang modern dan responsif, halaman ini menawarkan pengalaman eksklusif untuk membantu bisnis Anda mencapai tingkat pemasaran yang baru. Segera temukan potensi penuh pemasaran Anda dengan landing page kami yang inovatif dan sesuai dengan tuntutan bisnis modern!
 
 <br>
 
