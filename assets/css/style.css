@@ -357,79 +357,42 @@ button.buy:hover {
 }
 
 /* Contact and Footer */
-body {
-    font-size: 16px;
-    font-family: "Bebas Neue", sans-serif;
-    line-height: 1.5;
-    color: #000;
-}
-h1,
-h2,
-h3,
-h6 {
-    margin-bottom: 1rem;
-    color: #000;
-    font-size: 18px;
-}
-h2 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 25px;
-    margin-bottom: 1em;
-}
-p {
-    font-size: 15px;
-    margin-bottom: 1em;
-    color: #000;
+.display-4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  margin-bottom: 1rem;
+  color: #124c5f;
 }
 form button {
-    position: absolute;
-    top: 0;
-    border-radius: 5px;
-    right: 0px;
-    z-index: 2;
-    border: none;
-    top: 7px;
-    height: 36px;
-    cursor: pointer;
-    color: white;
-    background-color: #d8c98e;
-    transform: translateX(-4px);
-}
-.btn-email {
-    background-color: #d9c15f;
-}
-.btn-email:hover {
-    background-color: #b19521;
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  right: 0px;
+  z-index: 2;
+  border: none;
+  top: 7px;
+  height: 36px;
+  cursor: pointer;
+  color: white;
+  background-color: #d8c98e;
+  transform: translateX(-4px);
 }
 .input-email {
-    border: none;
-    height: 50px;
+  border: none !important;
+  height: 50px;
 }
 .form-groups {
-    width: 400px;
-    position: relative;
-}
-.container {
-    padding: 1rem;
+  width: 400px;
+  position: relative;
 }
 #newsletter {
-    background-color: #FFFAE6;
-    border: none;
-    border-radius: 50px;
-}
-.content-container {
-    margin-left: 180px;
-    margin-right: 180px;
-}
-.content {
-    width: 240px;
+  background-color: #fffae6;
+  border: none;
+  border-radius: 50px;
 }
 .center {
-    display: flex;
-    justify-content: center;
-}
-.bold {
-    font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 #copyright {
   padding: 10px;
@@ -438,4 +401,7 @@ form button {
 .s-footer {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
+/* akhir contact and footer */
