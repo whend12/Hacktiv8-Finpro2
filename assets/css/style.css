@@ -2,28 +2,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
 
 /* about  */
+:root {
+  --color-primary: #fa0;
+}
+
 .about-us-section {
   margin-top: 70px;
 }
 
 .text {
-  color: #124c5f;
-  font-family: "Bebas Neue", sans-serif;
+  color: #fa0;
+  font-family: "Nunito", sans-serif;
   letter-spacing: 2px;
   font-weight: bold;
 }
 
 .increase-about {
   font-weight: 700;
-  color: #234cad;
-  font-family: "Nunito Sans", sans-serif;
+  color: #fa0;
+  font-family: "Nunito", sans-serif;
 }
 .right-title {
   font-size: 20px;
   font-weight: 700;
-  color: #234cad;
+  color: #fa0;
   white-space: nowrap;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   flex-shrink: 0;
 }
 .about-us-small-title {
@@ -36,14 +40,14 @@
   background: #000;
   font-size: 15px;
   font-weight: 700;
-  color: #234cad;
+  color: #fa0;
   font-family: "Nunito Sans", sans-serif;
   background-color: #f2f6ff;
   border: solid 2px white;
 }
 
 .about-us-card-section {
-  background-color: #eef3fd;
+  background-color: #fef1b3;
   border-radius: 40px;
 }
 .about-us-card-border {
@@ -63,7 +67,6 @@
   border-bottom-left-radius: 0px;
   border: none;
 }
-
 .increase-left {
   margin: auto;
   width: 70%;
@@ -73,13 +76,14 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 1.625;
-  color: #234cad;
+  color: #fa0;
   font-family: "Nunito Sans", sans-serif;
   flex-shrink: 0;
 }
 .about-us-left {
   font-weight: 400;
-  color: #234cad;
+  box-sizing: border-box;
+  color: #fa0;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -87,9 +91,9 @@ button.btn.get-app {
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
-  color: #234cad;
+  color: #fa0;
   justify-content: center;
-  border: solid 2px #234cad;
+  border: solid 2px #fa0;
   box-sizing: border-box;
   border-radius: 3.25rem;
   width: 180px;
@@ -101,8 +105,9 @@ button.btn.get-app:hover {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6363636364;
-  color: #234cad;
-  border: solid 2px #234cad;
+  background-color: #fa0;
+  color: #fff;
+  border: none;
 }
 
 .custom-wrap {
@@ -122,14 +127,14 @@ button.btn.get-app:hover {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.6;
-  color: #234cad;
+  color: #fa0;
   font-family: "Nunito Sans", sans-serif;
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  border: solid 3px #234cad;
+  border: solid 3px #fa0;
   border-radius: 3.75rem;
   flex-shrink: 0;
   margin-bottom: 20px;
@@ -186,7 +191,7 @@ button.btn.get-app:hover {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: #ddd;
+  background-color: #fef1b3;
   border-radius: 25px 25px 0 25px;
 }
 .overlay::before,
@@ -197,7 +202,7 @@ button.btn.get-app:hover {
   bottom: -40px;
   height: 40px;
   width: 40px;
-  background-color: #ddd;
+  background-color: #fef1b3;
 }
 .overlay::after {
   border-radius: 0 25px 0 0;
@@ -218,7 +223,7 @@ button.btn.get-app:hover {
   border: none;
 }
 .name {
-  color: #000;
+  color: #ffb522ee;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.3rem;
@@ -226,8 +231,17 @@ button.btn.get-app:hover {
   font-weight: 400;
   line-height: 2.5rem;
 }
+.price {
+  color: #fa0;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+}
 .desc {
-  color: #124c5f;
+  color: #ffb522ee;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.25rem;
@@ -236,24 +250,27 @@ button.btn.get-app:hover {
   line-height: 2rem;
 }
 .btn-price {
-  color: #124c5f;
+  color: #fa0;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 700;
-  border: 1px solid #124c5f;
+  border: 1px solid #fa0;
   padding: 8px 16px;
   background-color: #fff;
   border-radius: 10px;
   margin: 14px;
 }
 .btn-price:hover {
-  background-color: #124c5f;
+  background-color: #fa0;
   color: #fff;
   transition: all 0.3s ease;
 }
+.swiper-navBtn {
+  color: #fa0;
+}
 .swiper-navBtn:hover {
-  color: #124c5f;
+  color: #fa0;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
@@ -265,14 +282,12 @@ button.btn.get-app:hover {
 .swiper-button-prev {
   left: 0;
 }
-.price {
-  color: #124c5f;
-  text-align: center;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 3rem;
+.swiper-pagination-bullet {
+  background-color: #fef1b3;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  color: #fa0;
 }
 @media screen and (max-width: 768px) {
   .slide-content {
