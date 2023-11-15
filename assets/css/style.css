@@ -6,10 +6,6 @@
   --color-primary: #fa0;
 }
 
-.about-us-section {
-  margin-top: 70px;
-}
-
 .text {
   color: #fa0;
   font-family: "Nunito", sans-serif;
@@ -33,7 +29,7 @@
 .about-us-small-title {
   width: 50px;
   height: 50px;
-  line-height: 40px;
+  line-height: 50px;
   border-radius: 50%;
   color: #fff;
   margin-top: 15px;
@@ -42,8 +38,10 @@
   font-weight: 700;
   color: #fa0;
   font-family: "Nunito Sans", sans-serif;
-  background-color: #f2f6ff;
-  border: solid 2px white;
+  background-color: #fff2b3;
+  border: solid 1px #ffaa00;
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .about-us-card-section {
@@ -53,6 +51,7 @@
 .about-us-card-border {
   border-radius: 20px;
   border: none;
+  background-color: #f5f5dc !important;
 }
 
 .about-us-card-right {
@@ -61,6 +60,7 @@
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 20px;
   border: none;
+  background-color: #f5f5dc !important;
 }
 .about-us-card-bottom {
   border-bottom-right-radius: 0px;
@@ -68,9 +68,13 @@
   border: none;
 }
 .increase-left {
-  margin: auto;
-  width: 70%;
-  padding: 10px;
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.text-pricing {
+  font-family: "Bebas Neue", sans-serif;
+  color: #124c5f;
 }
 .detail-about-us {
   font-size: 12px;
@@ -79,6 +83,9 @@
   color: #fa0;
   font-family: "Nunito Sans", sans-serif;
   flex-shrink: 0;
+}
+.card {
+  border: none !important;
 }
 .about-us-left {
   font-weight: 400;
@@ -98,13 +105,13 @@ button.btn.get-app {
   border-radius: 3.25rem;
   width: 180px;
   height: 70px;
-  margin-top: 40px;
+  margin-top: -15px;
+  margin-bottom: 0;
 }
 
 button.btn.get-app:hover {
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.6363636364;
   background-color: #fa0;
   color: #fff;
   border: none;
@@ -221,6 +228,14 @@ button.btn.get-app:hover {
   width: 100%;
   object-fit: cover;
   border: none;
+}
+img.card-img {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+img.card-img:hover {
+  transform: scale(1.1);
 }
 .name {
   color: #ffb522ee;
