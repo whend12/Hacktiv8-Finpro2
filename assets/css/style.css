@@ -156,6 +156,40 @@ button.btn.get-app:hover {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  .increase-left {
+    width: 100%;
+  }
+
+  .about-us-small-title {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+  }
+
+  .about-us-card-section {
+    border-radius: 20px;
+  }
+
+  .about-us-card-border {
+    border-radius: 10px;
+  }
+
+  .about-us-card-right {
+    border-radius: 10px;
+  }
+
+  .about-us-card-bottom {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  button.btn.get-app {
+    width: 100%;
+  }
+}
+
 /* Pricing */
 .pricing {
   height: 100vh;
