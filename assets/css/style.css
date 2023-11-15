@@ -286,12 +286,17 @@ img.card6 {
 }
 
 .grid-7 {
-  width: 320px;
+  width: 220px;
   height: 100px;
   border-radius: 20px;
   background-color: #ffd28f;
   display: flex;
   padding: 5px;
+}
+
+.grid-7,
+p {
+  font-size: smaller;
 }
 
 img.card7 {
@@ -343,6 +348,30 @@ img.bg-background {
   .col-md-4 {
     order: 2;
     margin-top: 20px;
+  }
+  .grid-5 {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    row-gap: 10px;
+    border-radius: 25px;
+    background: #ffd28f;
+    margin-right: 150px;
+  }
+
+  .grid-7 {
+    margin-bottom: 20px;
+  }
+
+  #service2,
+  #service1 {
+    white-space: normal;
+    word-break: break-all;
+    margin-right: -180px;
+    text-align: start;
+  }
+  .service {
+    word-break: normal;
   }
 }
 /* ================================ end of grid ==============================================*/
