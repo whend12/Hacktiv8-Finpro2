@@ -216,8 +216,7 @@ img.card4 {
   flex-shrink: 0;
   border-radius: 25px;
   background: #ffd28f;
-  margin-right: 350px;
-  margin-bottom: 200px;
+  margin-right: 150px;
 }
 
 img.img5 {
@@ -229,11 +228,11 @@ img.img5 {
 }
 .grid-6 {
   width: 320px;
-  height: auto;
+  height: 100px;
   border-radius: 25px;
   background-color: #ffd28f;
   display: flex;
-  margin-top: 50px;
+  margin-top: 90px;
   padding: 10px;
   position: relative;
 }
@@ -293,8 +292,6 @@ img.card6 {
   background-color: #ffd28f;
   display: flex;
   padding: 5px;
-  margin-top: 300px;
-  margin-right: 50%;
 }
 
 img.card7 {
@@ -315,6 +312,16 @@ img.card7 {
 
 img.bg-background {
   background-color: #fff2b3;
+}
+
+.grid-8 {
+  margin-left: 50px;
+}
+.card8 {
+  width: 70px;
+  height: 80px;
+  border-radius: 30%;
+  background-color: #ffd28f;
 }
 
 /* Tampilan mobile */
