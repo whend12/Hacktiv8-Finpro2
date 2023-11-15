@@ -341,14 +341,12 @@ img.bg-background {
 /* ================================ end of grid ==============================================*/
 
 /* img service */
-img.img-fluid-srv,
-img.card-img {
+img.img-fluid-srv {
   transition: transform 0.3s;
   cursor: pointer;
 }
 
-img.img-fluid-srv:hover,
-img.card-img:hover {
+img.img-fluid-srv:hover {
   transform: scale(1.1);
 }
 
