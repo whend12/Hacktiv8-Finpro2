@@ -714,6 +714,11 @@ img.bg-background {
     max-width: 100%;
   }
 
+  #textbanner {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   .col-md-5 {
     text-align: center;
     order: 1;
@@ -723,14 +728,11 @@ img.bg-background {
     order: 2;
     margin-top: 20px;
   }
+  .grid-6 {
+    margin-top: 5px;
+  }
   .grid-5 {
-    width: 100px;
-    height: 100px;
-    flex-shrink: 0;
-    row-gap: 10px;
-    border-radius: 25px;
-    background: var(--color-bgmore);
-    margin-right: 150px;
+    margin-top: 5px;
   }
 
   .grid-7 {
@@ -935,6 +937,10 @@ img.img-fluid-srv:hover {
   .about-us-card-bottom {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+
+  #thebest {
+    text-align: center;
   }
 }
 
