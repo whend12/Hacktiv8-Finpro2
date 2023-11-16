@@ -317,6 +317,14 @@ main {
   transform: scale(105%);
 }
 
+.scale .scale-1 {
+  transition: all 0.1s linear;
+}
+
+.scale .scale-1:hover {
+  transform: scale(105%);
+}
+
 .pruduct-features {
   margin-top: -150px;
   margin-bottom: 0;
