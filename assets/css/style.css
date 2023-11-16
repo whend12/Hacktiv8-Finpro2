@@ -8,19 +8,17 @@
   --color-background: #fff2b3;
   --color-bgsction: #f5f5dc;
   --color-txthead: #124c5f;
+  --color-bgmore: #ffd28f;
+  --color-sctionmore: #c7e7e1;
 }
 
 .txt {
-  color: #fa0;
+  color: var(--color-primary);
 }
 
 .head-transform {
   font-family: "Bebas Neue", sans-serif;
   color: var(--color-txthead);
-}
-
-a.explore-more {
-  color: #fa0 !important;
 }
 
 i.fa-solid:hover {
@@ -156,18 +154,6 @@ main {
   background-color: var(--color-primary);
 }
 
-.product-description a.explore-more {
-  border: 2px solid var(--color-primary);
-  padding: 15px 40px;
-  border-radius: 999px;
-  transition: all 0.3s linear;
-}
-
-.product-description a.explore-more:hover {
-  background-color: var(--color-primary);
-  color: var(--color-white) !important;
-}
-
 #-bagian-transform h1 {
   font-size: 48px;
   margin-bottom: 25px;
@@ -177,8 +163,9 @@ main {
   font-size: 16px;
 }
 
-#bagian-transform .header {
-  margin-bottom: 100px;
+#bagian-transform .trans-head {
+  margin-bottom: 50px;
+  margin-top: -50px;
 }
 
 #bagian-transform .message {
@@ -330,6 +317,11 @@ main {
   transform: scale(105%);
 }
 
+.pruduct-features {
+  margin-top: -150px;
+  margin-bottom: 0;
+}
+
 @media (max-width: 576px) {
   .message > div {
     margin-top: -70px;
@@ -341,6 +333,10 @@ main {
   .notifications {
     margin: 10px;
     height: 450px;
+  }
+  .row1 {
+    margin-bottom: 0;
+    margin-top: 30px !important;
   }
   .notifications .notif-1,
   .notifications .notif-2,
@@ -362,3 +358,408 @@ main {
   }
 }
 /* akhir section products */
+
+/* bagian navbar dan jumbotron */
+/* navbar */
+a.navbar-brand {
+  color: #ffe55e;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+a.navbar-brand:hover {
+  color: var(--color-primary);
+}
+
+span.pup {
+  color: var(--color-primary);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+a.nav-link {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  opacity: 80%;
+}
+
+.container > h2,
+.text {
+  color: var(--color-txthead);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+nav.navbar {
+  background: var(--color-background);
+  opacity: 80%;
+}
+
+button.login {
+  background-color: var(--color-sctionmore);
+  color: var(--color-txthead);
+  border: 1px solid var(--color-txthead);
+}
+
+button.login:hover {
+  background-color: var(--color-txthead);
+  color: var(--color-white);
+  border: 1px solid var(--color-sctionmore);
+}
+
+button.sign {
+  background-color: var(--color-txthead);
+  color: var(--color-white);
+}
+
+button.sign:hover {
+  background-color: var(--color-sctionmore);
+  color: var(--color-txthead);
+}
+
+/* section jumbotron */
+.jumbotron {
+  background-color: rgba(255, 242, 179, 0.34);
+  background-repeat: cover;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+/* revisi button */
+button.more {
+  background-color: var(--color-txthead);
+  color: var(--color-white);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+button.more:hover {
+  background-color: var(--color-sctionmore);
+  color: var(--color-txthead);
+  border: 1px solid var(--color-txthead);
+  z-index: 9999;
+}
+/* revisi button */
+
+.header {
+  border-radius: 60px;
+  background: #f5e8c7;
+  max-width: 1240px;
+  width: 1240px;
+  height: 575px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-shrink: 0;
+}
+/* ===================================== grid ============================================ */
+.row1,
+.row2 {
+  flex-direction: column;
+}
+.grid-1 {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+.card1 {
+  width: 70px;
+  height: 80px;
+  border-radius: 30%;
+  background-color: var(--color-bgmore);
+}
+
+.grid-2 {
+  width: 320px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: var(--color-bgmore);
+  display: flex;
+}
+
+.card2 {
+  width: 50px;
+  height: 60px;
+  border-radius: 40%;
+}
+
+.grid-3 {
+  width: 270px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: var(--color-bgmore);
+  display: flex;
+}
+
+img.card3 {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 7px;
+  margin-left: 4px;
+}
+
+.member {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  stroke-width: 2px;
+  stroke: var(--color-white);
+}
+
+.grid-4 {
+  width: 320px;
+  height: auto;
+  border-radius: 25px;
+  background-color: var(--color-bgmore);
+  display: flex;
+  padding: 10px;
+  position: relative;
+}
+
+img.card4 {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.content-container {
+  flex-grow: 1;
+}
+
+.text-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  margin-top: auto;
+}
+
+.grid-4:before,
+.grid-4:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent;
+}
+
+.grid-4:before {
+  top: 0;
+  left: -20px;
+  border-right-width: 15px;
+  border-bottom-width: 15px;
+  border-top-color: var(--color-bgmore);
+}
+
+.grid-4:after {
+  top: 0;
+  left: -16px;
+  border-right-width: 15px;
+  border-bottom-width: 15px;
+  border-top-color: var(--color-white);
+}
+
+.grid-5 {
+  width: 100px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: var(--color-bgmore);
+  margin-right: 150px;
+}
+
+img.img5 {
+  width: 50px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-top: 10px;
+  justify-content: center;
+}
+.grid-6 {
+  width: 320px;
+  height: 100px;
+  border-radius: 25px;
+  background-color: var(--color-bgmore);
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 0;
+  padding: 10px;
+  position: relative;
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+img.card6 {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.content-container {
+  flex-grow: 1;
+}
+
+.text-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  margin-top: auto;
+}
+
+.grid-6:before,
+.grid-6:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent;
+}
+
+.grid-6:before {
+  top: 0;
+  left: -20px;
+  border-right-width: 15px;
+  border-bottom-width: 15px;
+  border-top-color: var(--color-bgmore);
+}
+
+.grid-6:after {
+  top: 0;
+  left: -16px;
+  border-right-width: 15px;
+  border-bottom-width: 15px;
+  border-top-color: var(--color-white);
+}
+
+.grid-7 {
+  width: 220px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: var(--color-bgmore);
+  display: flex;
+  padding: 5px;
+}
+
+.grid-7,
+p {
+  font-size: smaller;
+}
+
+img.card7 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.text-container3 {
+  padding-top: 5px;
+  margin-right: 5px;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.bg-background {
+  background-color: var(--color-background);
+}
+
+.grid-8 {
+  margin-left: 50px;
+}
+.card8 {
+  width: 70px;
+  height: 80px;
+  border-radius: 30%;
+  background-color: var(--color-bgmore);
+}
+
+/* Tampilan mobile */
+@media (max-width: 767px) {
+  .jumbotron {
+    height: auto;
+  }
+
+  .header {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .col-md-5 {
+    text-align: center;
+    order: 1;
+  }
+
+  .col-md-4 {
+    order: 2;
+    margin-top: 20px;
+  }
+  .grid-5 {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    row-gap: 10px;
+    border-radius: 25px;
+    background: var(--color-bgmore);
+    margin-right: 150px;
+  }
+
+  .grid-7 {
+    margin-bottom: 20px;
+  }
+
+  #service2,
+  #service1 {
+    white-space: normal;
+    word-break: break-all;
+    margin-right: -180px;
+    text-align: start;
+  }
+  .service {
+    word-break: normal;
+  }
+}
+/* ================================ end of grid ==============================================*/
+
+/* img service */
+img.img-fluid-srv {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+img.img-fluid-srv:hover {
+  transform: scale(1.1);
+}
+
+.service-1 {
+  margin-right: 450px;
+  font-size: small;
+}
+
+.service-2 {
+  font-size: small;
+}
+
+#service {
+  font-size: 5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+/* akhir bagian navbar dan jumbotron */

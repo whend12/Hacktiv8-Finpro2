@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Business Marketing</title>
+    <title>Pet Care</title>
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/35dd348907.js"
@@ -12,7 +12,7 @@
     <!-- icons website -->
     <link
       rel="shortcut icon"
-      href="assets/img/icon/business.png"
+      href="assets/img/icon/trace.png"
       type="image/x-icon"
     />
     <!-- bootstrap icons -->
@@ -31,13 +31,438 @@
   </head>
   <body>
     <!-- navbar -->
-    <!-- akhir navbar -->
+    <nav class="navbar navbar-expand-lg home">
+      <div class="container">
+        <div class="container-fluid fw-bold">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse mt-2"
+            data-aos="fade-down"
+            id="navbarTogglerDemo01"
+          >
+            <img
+              src="assets/img/icon/trace.png"
+              alt="Logo"
+              width="20"
+              height="20"
+              class="d-inline-block align-text-top"
+              style="object-fit: cover"
+            />
 
-    <!-- jumbotron -->
+            <a
+              class="navbar-brand"
+              href="https://www.figma.com/file/wgyHSayOr5cXYlcPI8dQri/Pet-Care---Landing-page-(Community)?type=design&node-id=27%3A1&mode=design&t=8SUmdpuvIgssFVe2-1"
+              ><span class="pup">pup</span>hub</a
+            >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <button
+              class="btn login me-md-3"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalForm"
+            >
+              Login
+            </button>
+
+            <button
+              class="btn sign"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalSignUp"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+    <!-- Sign In Modal -->
+    <div
+      class="modal fade"
+      id="ModalForm"
+      tabindex="-1"
+      aria-labelledby="ModalFormLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" id="SignIn">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="myform">
+              <h1 class="text-center mb-4">Login</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                  />
+                </div>
+                <button type="submit" class="btn btn-dark mt-3 w-100">
+                  LOGIN
+                </button>
+              </form>
+              <div class="text-center mt-3">
+                <p class="text-dark">
+                  Not a member?
+                  <a
+                    href="#"
+                    class="text-dark fw-bold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ModalSignUp"
+                    data-bs-dismiss="modal"
+                    >Signup now</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sign In Modal -->
+
+    <!-- Sign Up Modal -->
+    <div
+      class="modal fade"
+      id="ModalSignUp"
+      tabindex="-1"
+      aria-labelledby="ModalSignUpLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close btn-close-dark"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center">
+                <!-- Bagian Kiri (Gambar) -->
+                <img
+                  src="/assets/img/signup.png"
+                  alt="dog-image"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div class="col-md-6">
+                <!-- Bagian Kanan (Formulir) -->
+                <div class="myform">
+                  <h1 class="text-center mb-4">Sign Up</h1>
+                  <form>
+                    <div class="mb-3">
+                      <label for="fullname" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="fullname" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Email address</label
+                      >
+                      <input type="email" class="form-control" id="email" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="confirmPassword" class="form-label"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100">
+                      Sign Up
+                    </button>
+                  </form>
+                  <div class="text-center mt-3">
+                    <p class="text-dark">
+                      Already a member?
+                      <a
+                        href="#"
+                        class="text-dark fw-bold"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ModalForm"
+                        data-bs-dismiss="modal"
+                        >Login now</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sign Up Modal -->
+
+    <!-- section jumbotron -->
+    <section class="jumbotron pt-5" id="home">
+      <div class="container header p-5">
+        <div class="row align-items-center lh-lg">
+          <div class="col-md-5 col-lg-6 mt-lg-1 col-12" data-aos="zoom-in">
+            <h1>Taking care of your Smart Dog!</h1>
+            <p>
+              Human-canine bonding is the relationship between dogs and humans.
+            </p>
+            <button
+              type="button"
+              onclick="window.location.href='https://www.thesprucepets.com/cute-dog-breeds-we-can-t-get-enough-of-4589340'"
+              class="btn more"
+            >
+              Explore More
+              <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
+            </button>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-12">
+            <div class="row row1">
+              <div class="col-md-6 col-12">
+                <a href="" class="grid-1">
+                  <img
+                    src="assets/img/header/dog1.png"
+                    alt="grid-1"
+                    class="card1 img-fluid text-center"
+                    data-aos="fade-right"
+                  />
+                </a>
+              </div>
+
+              <div class="col-md-3 col-12 mt-3">
+                <div
+                  class="grid-2 d-flex align-items-center"
+                  data-aos="fade-right"
+                >
+                  <img
+                    src="assets/img/header/dog2.png"
+                    alt="grid-2"
+                    class="card2 img-fluid text-center col-md-2 mx-2"
+                  />
+                  <div class="text-container">
+                    <h5>Food Healthy Dog</h5>
+                    <p>10/10</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-12 mt-3">
+                <div
+                  class="grid-3 d-flex align-items-center"
+                  data-aos="fade-right"
+                >
+                  <img
+                    src="assets/img/header/meeting.svg"
+                    alt="grid-2"
+                    class="card3 img-fluid text-center"
+                  />
+                  <div class="text-container">
+                    <h5>Dog Meeting</h5>
+                    <p>02:30 PM 15 Apr 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-12 mt-3">
+                <div
+                  class="grid-4 position-relative align-items-center"
+                  data-aos="fade-right"
+                >
+                  <img
+                    src="assets/img/header/chatdog.png"
+                    alt="grid-4"
+                    class="card4 text-center col-md-2 rounded-circle bg-background img-fluid"
+                  />
+                  <!-- <span class="notification-badge">1</span> -->
+                  <div class="content-container">
+                    <div class="text-container2">
+                      <h5>Jhon Smith</h5>
+                      <p>11:02 AM</p>
+                    </div>
+                    <div class="column">
+                      <p>Hello, are you available for a pro...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid kanan -->
+          <div class="col-md-4 col-lg-3">
+            <div class="row2 row">
+              <div
+                class="col-md-5 d-flex align-items-center ms-auto grid-5"
+                data-aos="fade-left"
+              >
+                <div class="text-center">
+                  <img
+                    src="assets/img/header/progress.svg"
+                    alt="progress"
+                    class="img5 img-fluid"
+                  />
+                  <span class="column">1.73/2.09GB</span>
+                </div>
+              </div>
+
+              <div class="col-md-3 col-12 mt-3" data-aos="fade-left">
+                <div class="grid-6 align-items-center">
+                  <img
+                    src="assets/img/header/chatdog.png"
+                    alt="grid-6"
+                    class="card6 text-center col-md-2 rounded-circle bg-background img-fluid"
+                  />
+                  <!-- <span class="notification-badge">1</span> -->
+                  <div class="content-container">
+                    <div class="text-container2">
+                      <h5>Anna Broks</h5>
+                      <p>11:02 AM</p>
+                    </div>
+                    <div class="column">
+                      <p>Hi, how are you doing today?</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid7 d-flex position-relative justify-content-end">
+                <div class="col-md-5 col-12 mt-4" data-aos="fade-left">
+                  <div class="grid-7 d-flex align-items-center">
+                    <img
+                      src="assets/img/header/saved.svg"
+                      alt="grid-7"
+                      class="card7 img-fluid text-center col-md-2"
+                    />
+                    <div class="text-container3">
+                      <h6 class="pt-2">Dog Saved</h6>
+                      <p class="text-wrap text-sm">
+                        You have successfully saved this message
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-11 col-12 d-flex pt-2 grid-8">
+              <a href="" class="grid-8">
+                <img
+                  src="assets/img/header/dog1.png"
+                  alt="grid-1"
+                  class="card8 img-fluid text-center"
+                  data-aos="fade-left"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- get waves -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
+      <path
+        fill="#fff2b3"
+        fill-opacity="0.34"
+        d="M0,96L30,106.7C60,117,120,139,180,149.3C240,160,300,160,360,144C420,128,480,96,540,106.7C600,117,660,171,720,176C780,181,840,139,900,138.7C960,139,1020,181,1080,192C1140,203,1200,181,1260,160C1320,139,1380,117,1410,106.7L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+      ></path>
+    </svg>
     <!-- akhir jumbotron -->
 
+    <!-- tambahan service masuk ke home -->
+    <div class="container text-center">
+      <h2 data-aos="zoom-in-up">Service Category</h2>
+      <div class="row" data-aos="zoom-out">
+        <div class="col-md-2 col-5 service-1">
+          <div class="d-flex align-items-center">
+            <img
+              src="assets/img/service-one.png"
+              class="img-fluid-srv w-75 me-3"
+              alt="image-one"
+            />
+            <div class="d-flex flex-column m-auto gap-1">
+              <h1 class="text-start fs-6 mb-0">Grooming Service</h1>
+              <p class="text-start text-sm text-truncate" id="service1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repellat, maiores!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-5 service-2">
+          <div class="d-flex align-items-center">
+            <img
+              src="assets/img/service-two.png"
+              class="img-fluid-srv w-75 me-3"
+              alt="image-two"
+            />
+            <div class="d-flex flex-column gap-1">
+              <h1 class="service text-start fs-6 mb-0">Health Care Service</h1>
+              <p class="text-start text-truncate" id="service2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repellat, maiores!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir home -->
+
     <!-- products and features -->
-    <section id="product">
+    <section id="products">
       <section id="banner product and features">
         <main class="mb-5 flex-column">
           <div class="container">
@@ -113,25 +538,23 @@
                 </div>
               </div>
               <div
-                class="product-description col col-md-6 mt-3 p-5 d-flex flex-column justify-content-center justify-content-md-center"
+                class="col col-md-6 mt-3 p-5 d-flex flex-column justify-content-center justify-content-md-center"
                 data-aos="fade-left"
               >
-                <h1
-                  class="fw-bold title mb-3 txt text-center text-md-start flex-1"
-                >
+                <h1 class="fw-bold title mb-3 text-center text-md-start flex-1">
                   Dog Nutrients & Food
                 </h1>
-                <h6
-                  class="description mb-md-5 my-4 txt text-center text-md-start"
-                >
+                <h6 class="description mb-md-3 text-center text-md-start">
                   25 % OFF all Products
                 </h6>
-                <a
-                  href="https://www.figma.com/file/oDqfeZesCm2ivOpkLqeBi8/startup-web-ui-kit-designtech?type=design&node-id=0%3A1&mode=design&t=Y7V4Mczf2c7NzLMT-1"
-                  class="explore-more fw-bold btn mx-auto ms-md-0"
-                  >Explore More
-                  <i class="fa-solid fa-angles-right" style="color: #ffaa01"></i
-                ></a>
+                <button
+                  type="button"
+                  onclick="window.location.href='https://www.amazon.in/Dogs-Supplies/b/?ie=UTF8&node=4771342031&ref_=sv_petsupplies_2'"
+                  class="btn more col-6 col-md-4"
+                >
+                  Explore More
+                  <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
+                </button>
               </div>
             </section>
 
@@ -142,7 +565,7 @@
               data-aos-easing="linear"
               data-aos-duration="1500"
             >
-              <div class="mx-auto text-center header">
+              <div class="mx-auto text-center trans-head">
                 <h1
                   class="fw-bold head-transform"
                   data-aos="fade-up"
@@ -340,11 +763,8 @@
     <!-- Swiper JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Template JS -->
-    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/script.js"></script>
     <!-- Animasi AOS -->
     <script src="assets/js/aos.js"></script>
-    <!-- Tilt js -->
-    <script type="text/javascript" src="assets/js/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
   </body>
 </html>
