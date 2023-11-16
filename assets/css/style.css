@@ -1129,7 +1129,7 @@ img.card-img:hover {
   margin-bottom: 1rem;
   color: #124c5f;
 }
-form button {
+.formButton {
   position: absolute;
   top: 0;
   border-radius: 5px;
