@@ -31,7 +31,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm">
       <div class="container">
         <div class="container-fluid fw-bold">
           <button
@@ -48,7 +48,7 @@
             id="navbarCollapse"
           >
             <img
-              src="assets/img/icon/trace.png"
+              src="assets/img/trace.png"
               alt="Logo"
               width="20"
               height="20"
@@ -417,7 +417,7 @@
 
     <!-- tambahan service masuk ke home -->
     <div class="container text-center">
-      <h2 data-aos="zoom-in-up">Service Category</h2>
+      <h1 class="head-transform" data-aos="zoom-in-up">Service Category</h1>
       <div class="row" data-aos="zoom-out">
         <div class="col-md-2 col-5 service-1">
           <div class="d-flex align-items-center">
@@ -538,9 +538,9 @@
                 <h1 class="fw-bold title mb-3 text-center text-md-start flex-1">
                   Dog Nutrients & Food
                 </h1>
-                <h6 class="description mb-md-3 text-center text-md-start">
+                <p class="description mb-md-3 text-center text-md-start">
                   25 % OFF all Products
-                </h6>
+                </p>
                 <div class="button-explore">
                   <button
                     type="button"
@@ -566,7 +566,7 @@
             >
               <div class="mx-auto text-center trans-head">
                 <h1
-                  class="fw-bold head-transform"
+                  class="head-transform"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -745,23 +745,30 @@
 
     <!-- about and pricing -->
     <!-- about -->
-    <section class="about-us-section container">
+    <section class="about-us-section container" id="about">
       <div class="row">
         <div class="col-md-6 mt-4">
           <div class="increase-left mt-5" data-aos="fade-right">
-            <h1 class="increase-about col-sm text">
+            <h1 class="increase-about col-sm text-black">
               The Best Solutions For Your Beloved Pets
             </h1>
-            <h6 class="about-us-left">
+            <p class="about-us-left">
               PupHub is committed to providing the best solutions for pet care.
               We are dedicated to giving them the attention and love they need
-            </h6>
-            <br />
-            <button class="btn get-app">LEARN MORE</button>
+            </p>
+
+            <button
+              type="button"
+              onclick="window.location.href='https://www.amazon.in/Dogs-Supplies/b/?ie=UTF8&node=4771342031&ref_=sv_petsupplies_2'"
+              class="btn more col-6 col-md-4"
+            >
+              Explore More
+              <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
+            </button>
           </div>
         </div>
         <div
-          class="col-md-6 about-us-card-section mt-4 mb-5"
+          class="col-md-6 about-us-card-section mt-4 mb-5 scale"
           data-aos="fade-left"
         >
           <div class="mt-4">
@@ -769,7 +776,7 @@
               <div class="row ms-2">
                 <div class="col-2"></div>
                 <div class="col-6 mt-2 mb-3">
-                  <div class="card about-us-card-border">
+                  <div class="card about-us-card-border scale-1">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-3 col-12">
@@ -800,9 +807,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 mt-2 mb-3 p-0 about-us-card-right">
+                <div class="col-4 mt-2 mb-3 p-0 about-us-card-right scale">
                   <div class="card about-us-card-right">
-                    <div class="card-body">
+                    <div class="card-body scale-1">
                       <div class="row">
                         <div class="col-md-5 col-12">
                           <img src="assets/img/message.svg" width="40px" />
@@ -829,10 +836,10 @@
                   </div>
                 </div>
               </div>
-              <div class="row ms-2">
+              <div class="row ms-2 scale">
                 <div class="col-2"></div>
                 <div class="col-6 mt-2 mb-3">
-                  <div class="card about-us-card-border">
+                  <div class="card about-us-card-border scale-1">
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-3 col-12">
@@ -856,19 +863,17 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 mt-2 mb-3 about-us-card-right">
-                  <div class="card about-us-card-right">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-5">
-                          <img src="assets/img/health.svg" width="40px" />
-                        </div>
-                        <div class="col-7 custom-hidden">
-                          <span class="right-title">Pet Management</span><br />
-                          <span class="detail-about-us custom-wrap"
-                            >5:45 PM 1 Jun</span
-                          >
-                        </div>
+                <div class="col-4 mt-2 mb-3 about-us-card-right scale-1">
+                  <div class="card-body mt-3">
+                    <div class="row">
+                      <div class="col-5">
+                        <img src="assets/img/health.svg" width="40px" />
+                      </div>
+                      <div class="col-7 custom-hidden">
+                        <span class="right-title">Pet Management</span><br />
+                        <span class="detail-about-us custom-wrap"
+                          >5:45 PM 1 Jun</span
+                        >
                       </div>
                       <div class="mt-2 custom-wrap custom-hidden">
                         <label class="text-center about-us-small-title"
@@ -891,7 +896,9 @@
               <div class="row ms-2">
                 <div class="col-2"></div>
                 <div class="col-6 mt-2">
-                  <div class="card about-us-card-border about-us-card-bottom">
+                  <div
+                    class="card about-us-card-border about-us-card-bottom scale-1"
+                  >
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-3 col-12">
@@ -907,7 +914,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4 mt-2 about-us-card-right">
+                <div class="col-4 mt-2 about-us-card-right scale-1">
                   <div
                     class="card about-us-card-border-bottom about-us-card-right"
                   >
@@ -1059,7 +1066,7 @@
 
     <!-- contact and form -->
     <!-- Contact and Footer -->
-    <div class="container-fluid">
+    <section class="container-fluid" id="contact">
       <div class="row justify-content-center mb-5">
         <div
           class="col-lg-10"
@@ -1067,13 +1074,13 @@
           data-aos-anchor-placement="center-bottom"
         >
           <div id="newsletter" class="card mt-5 p-5 text-center">
-            <h2 class="display-4 bold">Join Us With Affiliate Program</h2>
+            <h2 class="display-4">Join Us With Affiliate Program</h2>
             <div class="row">
               <div class="d-flex justify-content-center">
-                <h6 class="col-lg-6">
+                <p class="col-lg-4">
                   Get to know our latest news, updates, discounts, and much more
                   every week.
-                </h6>
+                </p>
               </div>
             </div>
             <form class="center my-4">
@@ -1104,40 +1111,47 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container text-center">
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mb-3"
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
-      >
-        <div class="col">
-          <h4 class="fw-bold">PupHub</h4>
-          <p>© 2023 - All Rights Reserved</p>
-        </div>
+      <div class="container text-center">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mb-3"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <div class="col">
+            <h4 class="fw-bold">PupHub</h4>
+            <p>© 2023 - All Rights Reserved</p>
+          </div>
 
-        <div class="col">
-          <h4 class="fw-bold">Products</h4>
-          <p>Dog Nutrients & Food</p>
-          <p>Features</p>
-        </div>
+          <div class="col">
+            <h4 class="fw-bold">Products</h4>
+            <p>Dog Nutrients & Food</p>
+            <p>Features</p>
+          </div>
 
-        <div class="col">
-          <h4 class="fw-bold">About</h4>
-          <p>Company</p>
-          <p>Team</p>
-        </div>
+          <div class="col">
+            <h4 class="fw-bold">About</h4>
+            <p>Company</p>
+            <p>Team</p>
+          </div>
 
-        <div class="col">
-          <h4 class="fw-bold">Contact Us</h4>
-          <p>(616)-459-8622</p>
-          <p>(616)-566-5896</p>
+          <div class="col">
+            <h4 class="fw-bold">Contact Us</h4>
+            <p>(616)-459-8622</p>
+            <p>(616)-566-5896</p>
+          </div>
         </div>
       </div>
-    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff2b3"
+          fill-opacity="0.34"
+          d="M0,96L30,106.7C60,117,120,139,180,149.3C240,160,300,160,360,144C420,128,480,96,540,106.7C600,117,660,171,720,176C780,181,840,139,900,138.7C960,139,1020,181,1080,192C1140,203,1200,181,1260,160C1320,139,1380,117,1410,106.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
 
     <footer id="copyright">
       <p

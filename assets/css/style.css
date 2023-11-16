@@ -16,6 +16,10 @@
   color: var(--color-primary);
 }
 
+nav.navbar {
+  background-color: var(--color-background);
+}
+
 .head-transform {
   font-family: "Bebas Neue", sans-serif;
   color: var(--color-txthead);
@@ -778,6 +782,10 @@ img.img-fluid-srv:hover {
 
 /* About and Pricing */
 
+#about-bg {
+  background-color: var(--color-background);
+}
+
 .text {
   color: #fa0;
   font-family: "Nunito", sans-serif;
@@ -862,31 +870,7 @@ img.img-fluid-srv:hover {
 .about-us-left {
   font-weight: 400;
   box-sizing: border-box;
-  color: #fa0;
   font-family: "Nunito Sans", sans-serif;
-}
-
-button.btn.get-app {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1;
-  color: #fa0;
-  justify-content: center;
-  border: solid 2px #fa0;
-  box-sizing: border-box;
-  border-radius: 3.25rem;
-  width: 180px;
-  height: 70px;
-  margin-top: -15px;
-  margin-bottom: 0;
-}
-
-button.btn.get-app:hover {
-  font-size: 20px;
-  font-weight: 500;
-  background-color: #fa0;
-  color: #fff;
-  border: none;
 }
 
 .custom-wrap {
@@ -955,10 +939,6 @@ button.btn.get-app:hover {
   .about-us-card-bottom {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-  }
-
-  button.btn.get-app {
-    width: 100%;
   }
 }
 
