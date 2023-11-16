@@ -353,7 +353,7 @@ main {
   .notifications .notif-1,
   .notifications .notif-2,
   .notifications .notif-3 {
-    width: 90%;
+    width: 95%;
     padding: 10px;
   }
   .notifications .time-1 {
@@ -364,10 +364,7 @@ main {
     margin-left: 20px;
     margin-right: 0;
   }
-  #bagian-transform {
-    margin-top: -80px;
-    margin-bottom: 0;
-  }
+
   .button-explore {
     display: flex;
     justify-content: center;
@@ -818,7 +815,7 @@ img.img-fluid-srv:hover {
   color: #fa0;
   font-family: "Nunito Sans", sans-serif;
   background-color: #fff2b3;
-  border: solid 1px #ffaa00;
+  border: solid 2px #fff;
   margin-top: 5px;
   margin-bottom: 0;
 }
@@ -846,7 +843,7 @@ img.img-fluid-srv:hover {
   border-bottom-left-radius: 0px;
   border: none;
 }
-.increase-left {
+.about-incres {
   width: 80%;
   padding-top: 50px;
   padding-bottom: 0;
@@ -912,7 +909,7 @@ img.img-fluid-srv:hover {
 }
 
 @media only screen and (max-width: 576px) {
-  .increase-left {
+  .about-incres {
     width: 100%;
   }
 
