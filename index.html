@@ -31,24 +31,21 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg home">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
       <div class="container">
         <div class="container-fluid fw-bold">
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border-white"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-target="#navbarCollapse"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
             class="collapse navbar-collapse mt-2"
             data-aos="fade-down"
-            id="navbarTogglerDemo01"
+            id="navbarCollapse"
           >
             <img
               src="assets/img/icon/trace.png"
@@ -58,43 +55,38 @@
               class="d-inline-block align-text-top"
               style="object-fit: cover"
             />
-
             <a
               class="navbar-brand"
               href="https://www.figma.com/file/wgyHSayOr5cXYlcPI8dQri/Pet-Care---Landing-page-(Community)?type=design&node-id=27%3A1&mode=design&t=8SUmdpuvIgssFVe2-1"
               ><span class="pup">pup</span>hub</a
             >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#products">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-            <button
-              class="btn login me-md-3"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#ModalForm"
-            >
-              Login
-            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div
+                class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 ms-auto mt-2 mt-lg-0"
+              >
+                <a href="#home" class="nav-item nav-link">Home</a>
+                <a href="#products" class="nav-item nav-link">Products</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+              </div>
+              <button
+                class="btn login me-md-3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalForm"
+              >
+                Login
+              </button>
 
-            <button
-              class="btn sign"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#ModalSignUp"
-            >
-              Sign Up
-            </button>
+              <button
+                class="btn sign"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalSignUp"
+              >
+                Sign Up
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -269,9 +261,9 @@
             </button>
           </div>
 
-          <div class="col-md-4 col-lg-3 col-12">
+          <div class="col-md-4 col-lg-3 col-12 message">
             <div class="row row1">
-              <div class="col-md-6 col-12">
+              <div class="col-md-6 col-12 component">
                 <a href="" class="grid-1">
                   <img
                     src="assets/img/header/dog1.png"
@@ -282,7 +274,7 @@
                 </a>
               </div>
 
-              <div class="col-md-3 col-12 mt-3">
+              <div class="col-md-3 col-12 mt-3 component">
                 <div
                   class="grid-2 d-flex align-items-center"
                   data-aos="fade-right"
@@ -299,7 +291,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3 col-12 mt-3">
+              <div class="col-md-3 col-12 mt-3 component">
                 <div
                   class="grid-3 d-flex align-items-center"
                   data-aos="fade-right"
@@ -316,7 +308,7 @@
                 </div>
               </div>
 
-              <div class="col-md-3 col-12 mt-3">
+              <div class="col-md-3 col-12 mt-3 component">
                 <div
                   class="grid-4 position-relative align-items-center"
                   data-aos="fade-right"
@@ -342,8 +334,8 @@
           </div>
 
           <!-- Grid kanan -->
-          <div class="col-md-4 col-lg-3">
-            <div class="row2 row">
+          <div class="col-md-4 col-lg-3 message">
+            <div class="row2 component row">
               <div
                 class="col-md-5 d-flex align-items-center ms-auto grid-5"
                 data-aos="fade-left"
@@ -359,7 +351,7 @@
               </div>
 
               <div class="col-md-3 col-12 mt-3" data-aos="fade-left">
-                <div class="grid-6 align-items-center">
+                <div class="grid-6 align-items-center component">
                   <img
                     src="assets/img/header/chatdog.png"
                     alt="grid-6"
@@ -377,7 +369,9 @@
                   </div>
                 </div>
               </div>
-              <div class="grid7 d-flex position-relative justify-content-end">
+              <div
+                class="grid7 d-flex position-relative justify-content-end component"
+              >
                 <div class="col-md-5 col-12 mt-4" data-aos="fade-left">
                   <div class="grid-7 d-flex align-items-center">
                     <img
@@ -396,7 +390,7 @@
               </div>
             </div>
 
-            <div class="col-md-11 col-12 d-flex pt-2 grid-8">
+            <div class="col-md-11 col-12 d-flex pt-2 grid-8 component">
               <a href="" class="grid-8">
                 <img
                   src="assets/img/header/dog1.png"
@@ -471,11 +465,11 @@
               class="row align-items-center justify-content-center"
             >
               <div
-                class="notifications col col-md-6 d-flex flex-column align-items-center gap-4 justify-content-center bg-gray"
+                class="notifications col col-md-6 d-flex flex-column align-items-center gap-4 justify-content-center bg-gray message"
                 data-aos="fade-right"
               >
                 <div
-                  class="notif notif-1 d-flex justify-content-between align-items-center bg-sction shadow"
+                  class="notif notif-1 d-flex justify-content-between align-items-center bg-sction shadow component"
                 >
                   <div
                     class="profile bg-gray text-warning profile-img-1 d-flex align-items-center justify-content-center rounded-pill position-relative"
@@ -499,7 +493,7 @@
                   >
                 </div>
                 <div
-                  class="notif notif-2 d-flex justify-content-between align-items-center bg-sction shadow"
+                  class="notif notif-2 d-flex justify-content-between align-items-center bg-sction shadow component"
                 >
                   <div
                     class="profile text-warning profile-img-2 bg-gray d-flex align-items-center justify-content-center rounded-pill position-relative"
@@ -518,7 +512,7 @@
                   <span class="align-self-start time-2 times"> Sold Out </span>
                 </div>
                 <div
-                  class="notif notif-3 d-flex justify-content-between align-items-center bg-sction shadow"
+                  class="notif notif-3 d-flex justify-content-between align-items-center bg-sction shadow component"
                 >
                   <div
                     class="profile text-warning profile-img-3 bg-gray d-flex align-items-center justify-content-center rounded-pill position-relative"
@@ -547,14 +541,19 @@
                 <h6 class="description mb-md-3 text-center text-md-start">
                   25 % OFF all Products
                 </h6>
-                <button
-                  type="button"
-                  onclick="window.location.href='https://www.amazon.in/Dogs-Supplies/b/?ie=UTF8&node=4771342031&ref_=sv_petsupplies_2'"
-                  class="btn more col-6 col-md-4"
-                >
-                  Explore More
-                  <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
-                </button>
+                <div class="button-explore">
+                  <button
+                    type="button"
+                    onclick="window.location.href='https://www.amazon.in/Dogs-Supplies/b/?ie=UTF8&node=4771342031&ref_=sv_petsupplies_2'"
+                    class="btn more col-6 col-md-4"
+                  >
+                    Explore More
+                    <i
+                      class="fa-solid fa-angle-right"
+                      style="color: #ffffff"
+                    ></i>
+                  </button>
+                </div>
               </div>
             </section>
 
